@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  postgresql:
+    image: postgres:latest
+    command: postgres -c log_min_messages=NOTICE -c max_wal_size=2GB
+    ports:
+      - "5432:5432"
+    volumes:
+      - "postgres_data:/home/postgres/pgdata/data"
+      - "/mnt/e/abordagem_1-data-gen:/home/postgres/table_files"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+
+volumes:
+  postgres_data:
+  
