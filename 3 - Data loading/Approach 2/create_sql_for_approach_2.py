@@ -3,7 +3,7 @@ from itertools import islice
 import random
 
 # Get tenant directories
-tenants = [f'tenant_{i}' for i in range(1, 51)]
+tenants = [f'tenant_{i}' for i in range(1, 26)]
 
 
 
@@ -342,8 +342,8 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
     # Create Copy and Delete commands for table Region
     ten_counter = 1
-    table_region_ten = [f'tenant_{i}' for i in range(1, 51)]
-    while ten_counter < 51:
+    table_region_ten = [f'tenant_{i}' for i in range(1, 26)]
+    while ten_counter < 26:
         tenant = random.choice(table_region_ten)
         copy_and_delete_rows(tenant, 'region', 6)
         ten_counter += 1
@@ -373,8 +373,8 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
     # Create Copy and Delete commands for table nation
     ten_counter = 1
-    table_region_ten = [f'tenant_{i}' for i in range(1, 51)]
-    while ten_counter < 51:
+    table_region_ten = [f'tenant_{i}' for i in range(1, 26)]
+    while ten_counter < 26:
         tenant = random.choice(table_region_ten)
         copy_and_delete_rows(tenant, 'nation', 25)
         ten_counter += 1
@@ -480,10 +480,10 @@ INSERT INTO Tenants (t_tenant_id, t_Name) VALUES
 """
     output_file.write(tenant_table)
     id = 1
-    for tenant in [f'tenant_{i}' for i in range(1, 51)]:
+    for tenant in [f'tenant_{i}' for i in range(1, 26)]:
         tenants = """({0}, '{1}'){2}
 """
-        if tenant == 'tenant_50':
+        if tenant == 'tenant_25':
             tenants = tenants.format(id, tenant,";")
         else:
             tenants = tenants.format(id, tenant,",")

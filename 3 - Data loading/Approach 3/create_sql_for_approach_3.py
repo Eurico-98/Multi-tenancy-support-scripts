@@ -23,7 +23,7 @@ CREATE TABLE tenant_groups (
 # Create tenant_groups dictionary for Step 4
 tenant_groups = {}
 
-tenants = [f'{i}' for i in range(1, 51)]
+tenants = [f'{i}' for i in range(1, 26)]
 
 # Create 10 groups with random tenants
 for group_id in range(1000, 1010):
@@ -53,9 +53,9 @@ lines_to_update_for_each_group = {}
 
 # get number of lines to update in each table
 # row counts from previous script - avoid redoing same calculation
-# "lineitem" table row count 513636306
+# "lineitem" table row count 123660392
 for group in tenant_groups.keys(): 
-    num_lines_to_update = random.randint(1, int(0.03 * 513636306))
+    num_lines_to_update = random.randint(1, int(0.03 * 123660392))
     lines_to_update_for_each_group[group] = num_lines_to_update
 
 

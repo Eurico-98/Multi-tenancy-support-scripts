@@ -32,11 +32,11 @@
           <stringProp name="connectionAge">5000</stringProp>
           <stringProp name="connectionProperties"></stringProp>
           <stringProp name="dataSource">Power-test</stringProp>
-          <stringProp name="dbUrl">jdbc:postgresql://test-instance.cob7aqndu7dk.eu-north-1.rds.amazonaws.com:5432/postgres</stringProp>
+          <stringProp name="dbUrl">jdbc:postgresql://a2-pt.cob7aqndu7dk.eu-north-1.rds.amazonaws.com:5432/postgres</stringProp>
           <stringProp name="driver">org.postgresql.Driver</stringProp>
           <stringProp name="initQuery"></stringProp>
           <boolProp name="keepAlive">true</boolProp>
-          <stringProp name="password">postgres</stringProp>
+          <stringProp name="password">BD_RDS_EC2_instances_172635</stringProp>
           <stringProp name="poolMax">0</stringProp>
           <boolProp name="preinit">false</boolProp>
           <stringProp name="timeout">10000</stringProp>
@@ -121,7 +121,7 @@
         <hashTree/>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q1" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
-          <stringProp name="query">select l_returnflag, l_linestatus, sum(l_quantity) as sum_qty, sum(l_extendedprice) as sum_base_price, sum(l_extendedprice * (1 - l_discount)) as sum_disc_price, sum(l_extendedprice * (1 - l_discount) * (1 + l_tax)) as sum_charge, avg(l_quantity) as avg_qty, avg(l_extendedprice) as avg_price, avg(l_discount) as avg_disc, count(*) as count_order from lineitem where tenant_id = 40 and l_shipdate &lt;= date &apos;1998-12-01&apos; - interval &apos;61&apos; day group by l_returnflag, l_linestatus order by l_returnflag, l_linestatus;
+          <stringProp name="query">select l_returnflag, l_linestatus, sum(l_quantity) as sum_qty, sum(l_extendedprice) as sum_base_price, sum(l_extendedprice * (1 - l_discount)) as sum_disc_price, sum(l_extendedprice * (1 - l_discount) * (1 + l_tax)) as sum_charge, avg(l_quantity) as avg_qty, avg(l_extendedprice) as avg_price, avg(l_discount) as avg_disc, count(*) as count_order from lineitem where tenant_id = 19 and l_shipdate &lt;= date &apos;1998-12-01&apos; - interval &apos;61&apos; day group by l_returnflag, l_linestatus order by l_returnflag, l_linestatus;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -136,7 +136,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q2" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select s_acctbal, s_name, n_name, p_partkey, p_mfgr, s_address, s_phone, s_comment from part, supplier, partsupp, nation, region where tenant_id = 40 and p_partkey = ps_partkey and s_suppkey = ps_suppkey and p_size = 14 and p_type like &apos;%BRASS&apos; and s_nationkey = n_nationkey and n_regionkey = r_regionkey and r_name = &apos;AFRICA&apos; and ps_supplycost = (select min(ps_supplycost) from partsupp, supplier, nation, region where tenant_id = 40 and p_partkey = ps_partkey and s_suppkey = ps_suppkey and s_nationkey = n_nationkey and n_regionkey = r_regionkey and r_name = &apos;AFRICA&apos;) order by s_acctbal desc, n_name, s_name, p_partkey limit 100;
+          <stringProp name="query">select s_acctbal, s_name, n_name, p_partkey, p_mfgr, s_address, s_phone, s_comment from part, supplier, partsupp, nation, region where tenant_id = 19 and p_partkey = ps_partkey and s_suppkey = ps_suppkey and p_size = 14 and p_type like &apos;%BRASS&apos; and s_nationkey = n_nationkey and n_regionkey = r_regionkey and r_name = &apos;AFRICA&apos; and ps_supplycost = (select min(ps_supplycost) from partsupp, supplier, nation, region where tenant_id = 19 and p_partkey = ps_partkey and s_suppkey = ps_suppkey and s_nationkey = n_nationkey and n_regionkey = r_regionkey and r_name = &apos;AFRICA&apos;) order by s_acctbal desc, n_name, s_name, p_partkey limit 100;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -150,7 +150,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q3" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select l_orderkey, sum(l_extendedprice * (1 - l_discount)) as revenue, o_orderdate, o_shippriority from customer, orders, lineitem where tenant_id = 40 and c_mktsegment = &apos;BUILDING&apos; and c_custkey = o_custkey and l_orderkey = o_orderkey and o_orderdate &lt; date &apos;1995-03-06&apos; and l_shipdate &gt; date &apos;1995-03-06&apos; group by l_orderkey, o_orderdate, o_shippriority order by revenue desc, o_orderdate limit 10;
+          <stringProp name="query">select l_orderkey, sum(l_extendedprice * (1 - l_discount)) as revenue, o_orderdate, o_shippriority from customer, orders, lineitem where tenant_id = 19 and c_mktsegment = &apos;BUILDING&apos; and c_custkey = o_custkey and l_orderkey = o_orderkey and o_orderdate &lt; date &apos;1995-03-06&apos; and l_shipdate &gt; date &apos;1995-03-06&apos; group by l_orderkey, o_orderdate, o_shippriority order by revenue desc, o_orderdate limit 10;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -164,7 +164,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q4" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select o_orderpriority, count(*) as order_count from orders where tenant_id = 40 and o_orderdate &gt;= date &apos;1993-12-01&apos; and o_orderdate &lt; date &apos;1993-12-01&apos; + interval &apos;3&apos; month and exists (select * from lineitem where tenant_id = 40 and l_orderkey = o_orderkey and l_commitdate &lt; l_receiptdate) group by o_orderpriority order by o_orderpriority;
+          <stringProp name="query">select o_orderpriority, count(*) as order_count from orders where tenant_id = 19 and o_orderdate &gt;= date &apos;1993-12-01&apos; and o_orderdate &lt; date &apos;1993-12-01&apos; + interval &apos;3&apos; month and exists (select * from lineitem where tenant_id = 19 and l_orderkey = o_orderkey and l_commitdate &lt; l_receiptdate) group by o_orderpriority order by o_orderpriority;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -178,7 +178,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q5" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select n_name, sum(l_extendedprice * (1 - l_discount)) as revenue from customer, orders, lineitem, supplier, nation, region where tenant_id = 40 and c_custkey = o_custkey and l_orderkey = o_orderkey and l_suppkey = s_suppkey and c_nationkey = s_nationkey and s_nationkey = n_nationkey and n_regionkey = r_regionkey and r_name = &apos;AFRICA&apos; and o_orderdate &gt;= date &apos;1994-01-01&apos; and o_orderdate &lt; date &apos;1994-01-01&apos; + interval &apos;1&apos; year group by n_name order by revenue desc;
+          <stringProp name="query">select n_name, sum(l_extendedprice * (1 - l_discount)) as revenue from customer, orders, lineitem, supplier, nation, region where tenant_id = 19 and c_custkey = o_custkey and l_orderkey = o_orderkey and l_suppkey = s_suppkey and c_nationkey = s_nationkey and s_nationkey = n_nationkey and n_regionkey = r_regionkey and r_name = &apos;AFRICA&apos; and o_orderdate &gt;= date &apos;1994-01-01&apos; and o_orderdate &lt; date &apos;1994-01-01&apos; + interval &apos;1&apos; year group by n_name order by revenue desc;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -192,7 +192,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q6" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select sum(l_extendedprice * l_discount) as revenue from lineitem where tenant_id = 40 and l_shipdate &gt;= date &apos;1994-01-01&apos; and l_shipdate &lt; date &apos;1994-01-01&apos; + interval &apos;1&apos; year and l_discount between 0.09 - 0.01 and 0.09 + 0.01 and l_quantity &lt; 25;
+          <stringProp name="query">select sum(l_extendedprice * l_discount) as revenue from lineitem where tenant_id = 19 and l_shipdate &gt;= date &apos;1994-01-01&apos; and l_shipdate &lt; date &apos;1994-01-01&apos; + interval &apos;1&apos; year and l_discount between 0.09 - 0.01 and 0.09 + 0.01 and l_quantity &lt; 25;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -206,7 +206,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q7" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select supp_nation, cust_nation, l_year, sum(volume) as revenue from (select n1.n_name as supp_nation, n2.n_name as cust_nation, extract(year from l_shipdate) as l_year, l_extendedprice * (1 - l_discount) as volume from supplier, lineitem, orders, customer, nation n1, nation n2 where tenant_id = 40 and s_suppkey = l_suppkey and o_orderkey = l_orderkey and c_custkey = o_custkey and s_nationkey = n1.n_nationkey and c_nationkey = n2.n_nationkey and ((n1.n_name = &apos;RUSSIA&apos; and n2.n_name = &apos;ROMANIA&apos;) OR (n1.n_name = &apos;ROMANIA&apos; and n2.n_name = &apos;RUSSIA&apos;)) and l_shipdate between date &apos;1995-01-01&apos; and date &apos;1996-12-31&apos;) as shipping group by supp_nation, cust_nation, l_year order by supp_nation, cust_nation, l_year;
+          <stringProp name="query">select supp_nation, cust_nation, l_year, sum(volume) as revenue from (select n1.n_name as supp_nation, n2.n_name as cust_nation, extract(year from l_shipdate) as l_year, l_extendedprice * (1 - l_discount) as volume from supplier, lineitem, orders, customer, nation n1, nation n2 where tenant_id = 19 and s_suppkey = l_suppkey and o_orderkey = l_orderkey and c_custkey = o_custkey and s_nationkey = n1.n_nationkey and c_nationkey = n2.n_nationkey and ((n1.n_name = &apos;RUSSIA&apos; and n2.n_name = &apos;ROMANIA&apos;) OR (n1.n_name = &apos;ROMANIA&apos; and n2.n_name = &apos;RUSSIA&apos;)) and l_shipdate between date &apos;1995-01-01&apos; and date &apos;1996-12-31&apos;) as shipping group by supp_nation, cust_nation, l_year order by supp_nation, cust_nation, l_year;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -220,7 +220,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q8" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select o_year, sum(case when nation = &apos;ROMANIA&apos; then volume else 0 end) / sum(volume) as mkt_share from (select extract(year from o_orderdate) as o_year, l_extendedprice * (1 - l_discount) as volume, n2.n_name as nation from part, supplier, lineitem, orders, customer, nation n1, nation n2, region where tenant_id = 40 and p_partkey = l_partkey and s_suppkey = l_suppkey and l_orderkey = o_orderkey and o_custkey = c_custkey and c_nationkey = n1.n_nationkey and n1.n_regionkey = r_regionkey and r_name = &apos;EUROPE&apos; and s_nationkey = n2.n_nationkey and o_orderdate between date &apos;1995-01-01&apos; and date &apos;1996-12-31&apos; and p_type = &apos;PROMO ANODIZED TIN&apos;) as all_nations group by o_year order by o_year;
+          <stringProp name="query">select o_year, sum(case when nation = &apos;ROMANIA&apos; then volume else 0 end) / sum(volume) as mkt_share from (select extract(year from o_orderdate) as o_year, l_extendedprice * (1 - l_discount) as volume, n2.n_name as nation from part, supplier, lineitem, orders, customer, nation n1, nation n2, region where tenant_id = 19 and p_partkey = l_partkey and s_suppkey = l_suppkey and l_orderkey = o_orderkey and o_custkey = c_custkey and c_nationkey = n1.n_nationkey and n1.n_regionkey = r_regionkey and r_name = &apos;EUROPE&apos; and s_nationkey = n2.n_nationkey and o_orderdate between date &apos;1995-01-01&apos; and date &apos;1996-12-31&apos; and p_type = &apos;PROMO ANODIZED TIN&apos;) as all_nations group by o_year order by o_year;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -234,7 +234,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q9" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select nation, o_year, sum(amount) as sum_profit from (select n_name as nation, extract(year from o_orderdate) as o_year, l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount from part, supplier, lineitem, partsupp, orders, nation where tenant_id = 40 and s_suppkey = l_suppkey and ps_suppkey = l_suppkey and ps_partkey = l_partkey and p_partkey = l_partkey and o_orderkey = l_orderkey and s_nationkey = n_nationkey and p_name like &apos;%sienna%&apos;) as profit group by nation, o_year order by nation, o_year desc;
+          <stringProp name="query">select nation, o_year, sum(amount) as sum_profit from (select n_name as nation, extract(year from o_orderdate) as o_year, l_extendedprice * (1 - l_discount) - ps_supplycost * l_quantity as amount from part, supplier, lineitem, partsupp, orders, nation where tenant_id = 19 and s_suppkey = l_suppkey and ps_suppkey = l_suppkey and ps_partkey = l_partkey and p_partkey = l_partkey and o_orderkey = l_orderkey and s_nationkey = n_nationkey and p_name like &apos;%sienna%&apos;) as profit group by nation, o_year order by nation, o_year desc;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -248,7 +248,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q10" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select c_custkey, c_name, sum(l_extendedprice * (1 - l_discount)) as revenue, c_acctbal, n_name, c_address, c_phone, c_comment from customer, orders, lineitem, nation where tenant_id = 40 and c_custkey = o_custkey and l_orderkey = o_orderkey and o_orderdate &gt;= date &apos;1993-04-01&apos; and o_orderdate &lt; date &apos;1993-04-01&apos; + interval &apos;3&apos; month and l_returnflag = &apos;R&apos; and c_nationkey = n_nationkey group by c_custkey, c_name, c_acctbal, c_phone, n_name, c_address, c_comment order by revenue desc limit 20;
+          <stringProp name="query">select c_custkey, c_name, sum(l_extendedprice * (1 - l_discount)) as revenue, c_acctbal, n_name, c_address, c_phone, c_comment from customer, orders, lineitem, nation where tenant_id = 19 and c_custkey = o_custkey and l_orderkey = o_orderkey and o_orderdate &gt;= date &apos;1993-04-01&apos; and o_orderdate &lt; date &apos;1993-04-01&apos; + interval &apos;3&apos; month and l_returnflag = &apos;R&apos; and c_nationkey = n_nationkey group by c_custkey, c_name, c_acctbal, c_phone, n_name, c_address, c_comment order by revenue desc limit 20;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -262,7 +262,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q11" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select ps_partkey, sum(ps_supplycost * ps_availqty) as value from partsupp, supplier, nation where tenant_id = 40 and ps_suppkey = s_suppkey and s_nationkey = n_nationkey and n_name = &apos;INDONESIA&apos; group by ps_partkey having sum(ps_supplycost * ps_availqty) &gt; (select sum(ps_supplycost * ps_availqty) * 0.0000090909 from partsupp, supplier, nation where tenant_id = 40 and ps_suppkey = s_suppkey and s_nationkey = n_nationkey and n_name = &apos;INDONESIA&apos;) order by value desc;
+          <stringProp name="query">select ps_partkey, sum(ps_supplycost * ps_availqty) as value from partsupp, supplier, nation where tenant_id = 19 and ps_suppkey = s_suppkey and s_nationkey = n_nationkey and n_name = &apos;INDONESIA&apos; group by ps_partkey having sum(ps_supplycost * ps_availqty) &gt; (select sum(ps_supplycost * ps_availqty) * 0.0000090909 from partsupp, supplier, nation where tenant_id = 19 and ps_suppkey = s_suppkey and s_nationkey = n_nationkey and n_name = &apos;INDONESIA&apos;) order by value desc;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -276,7 +276,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q12" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select l_shipmode, sum(case when o_orderpriority = &apos;1-URGENT&apos; or o_orderpriority = &apos;2-HIGH&apos; then 1 else 0 end) as high_line_count, sum(case when o_orderpriority &lt;&gt; &apos;1-URGENT&apos; and o_orderpriority &lt;&gt; &apos;2-HIGH&apos; then 1 else 0 end) as low_line_count from orders, lineitem where tenant_id = 40 and o_orderkey = l_orderkey and l_shipmode in (&apos;RAIL&apos;, &apos;TRUCK&apos;) and l_commitdate &lt; l_receiptdate and l_shipdate &lt; l_commitdate and l_receiptdate &gt;= date &apos;1995-01-01&apos; and l_receiptdate &lt; date &apos;1995-01-01&apos; + interval &apos;1&apos; year group by l_shipmode order by l_shipmode;
+          <stringProp name="query">select l_shipmode, sum(case when o_orderpriority = &apos;1-URGENT&apos; or o_orderpriority = &apos;2-HIGH&apos; then 1 else 0 end) as high_line_count, sum(case when o_orderpriority &lt;&gt; &apos;1-URGENT&apos; and o_orderpriority &lt;&gt; &apos;2-HIGH&apos; then 1 else 0 end) as low_line_count from orders, lineitem where tenant_id = 19 and o_orderkey = l_orderkey and l_shipmode in (&apos;RAIL&apos;, &apos;TRUCK&apos;) and l_commitdate &lt; l_receiptdate and l_shipdate &lt; l_commitdate and l_receiptdate &gt;= date &apos;1995-01-01&apos; and l_receiptdate &lt; date &apos;1995-01-01&apos; + interval &apos;1&apos; year group by l_shipmode order by l_shipmode;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -290,7 +290,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q13" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select c_count, count(*) as custdist from (select c_custkey, count(o_orderkey) from customer where tenant_id = 40 left outer join orders on c_custkey = o_custkey and o_comment not like &apos;%pending%accounts%&apos; group by c_custkey) as c_orders (c_custkey, c_count) group by c_count order by custdist desc, c_count desc;
+          <stringProp name="query">select c_count, count(*) as custdist from (select c_custkey, count(o_orderkey) from customer where tenant_id = 19 left outer join orders on c_custkey = o_custkey and o_comment not like &apos;%pending%accounts%&apos; group by c_custkey) as c_orders (c_custkey, c_count) group by c_count order by custdist desc, c_count desc;
 
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -305,7 +305,7 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q14" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select 100.00 * sum(case when p_type like &apos;PROMO%&apos; then l_extendedprice * (1 - l_discount) else 0 end) / sum(l_extendedprice * (1 - l_discount)) as promo_revenue from lineitem, part where tenant_id = 40 and l_partkey = p_partkey and l_shipdate &gt;= date &apos;1995-12-01&apos; and l_shipdate &lt; date &apos;1995-12-01&apos; + interval &apos;1&apos; month;
+          <stringProp name="query">select 100.00 * sum(case when p_type like &apos;PROMO%&apos; then l_extendedprice * (1 - l_discount) else 0 end) / sum(l_extendedprice * (1 - l_discount)) as promo_revenue from lineitem, part where tenant_id = 19 and l_partkey = p_partkey and l_shipdate &gt;= date &apos;1995-12-01&apos; and l_shipdate &lt; date &apos;1995-12-01&apos; + interval &apos;1&apos; month;
 
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -320,8 +320,8 @@
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q15" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Callable Statement</stringProp>
-          <stringProp name="query">create view revenue0 (supplier_no, total_revenue) as select l_suppkey, sum(l_extendedprice * (1 - l_discount)) from lineitem where tenant_id = 40 and l_shipdate &gt;= date &apos;1995-12-01&apos; and l_shipdate &lt; date &apos;1995-12-01&apos; + interval &apos;3&apos; month group by l_suppkey;
-select s_suppkey, s_name, s_address, s_phone, total_revenue from supplier, revenue0 where tenant_id = 40 and s_suppkey = supplier_no and total_revenue = (select max(total_revenue) from revenue0) order by s_suppkey;
+          <stringProp name="query">create view revenue0 (supplier_no, total_revenue) as select l_suppkey, sum(l_extendedprice * (1 - l_discount)) from lineitem where tenant_id = 19 and l_shipdate &gt;= date &apos;1995-12-01&apos; and l_shipdate &lt; date &apos;1995-12-01&apos; + interval &apos;3&apos; month group by l_suppkey;
+select s_suppkey, s_name, s_address, s_phone, total_revenue from supplier, revenue0 where tenant_id = 19 and s_suppkey = supplier_no and total_revenue = (select max(total_revenue) from revenue0) order by s_suppkey;
 drop view revenue0;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -336,7 +336,7 @@ drop view revenue0;
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q16" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select p_brand, p_type, p_size, count(distinct ps_suppkey) as supplier_cnt from partsupp, part where tenant_id = 40 and p_partkey = ps_partkey and p_brand &lt;&gt; &apos;Brand#52&apos; and p_type not like &apos;LARGE BRUSHED%&apos; and p_size in (20, 35, 34, 50, 23, 28, 48, 17) and ps_suppkey not in (select s_suppkey from supplier where tenant_id = 40 and s_comment like &apos;%Customer%Complaints%&apos;) group by p_brand, p_type, p_size order by supplier_cnt desc, p_brand, p_type, p_size;
+          <stringProp name="query">select p_brand, p_type, p_size, count(distinct ps_suppkey) as supplier_cnt from partsupp, part where tenant_id = 19 and p_partkey = ps_partkey and p_brand &lt;&gt; &apos;Brand#52&apos; and p_type not like &apos;LARGE BRUSHED%&apos; and p_size in (20, 35, 34, 50, 23, 28, 48, 17) and ps_suppkey not in (select s_suppkey from supplier where tenant_id = 19 and s_comment like &apos;%Customer%Complaints%&apos;) group by p_brand, p_type, p_size order by supplier_cnt desc, p_brand, p_type, p_size;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -350,7 +350,7 @@ drop view revenue0;
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q17" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select sum(l_extendedprice) / 7.0 as avg_yearly from lineitem, part where tenant_id = 40 and p_partkey = l_partkey and p_brand = &apos;Brand#24&apos; and p_container = &apos;LG DRUM&apos; and l_quantity &lt; (select 0.2 * avg(l_quantity) from lineitem where tenant_id = 40 and l_partkey = p_partkey);
+          <stringProp name="query">select sum(l_extendedprice) / 7.0 as avg_yearly from lineitem, part where tenant_id = 19 and p_partkey = l_partkey and p_brand = &apos;Brand#24&apos; and p_container = &apos;LG DRUM&apos; and l_quantity &lt; (select 0.2 * avg(l_quantity) from lineitem where tenant_id = 19 and l_partkey = p_partkey);
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -364,7 +364,7 @@ drop view revenue0;
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q18" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select c_name, c_custkey, o_orderkey, o_orderdate, o_totalprice, sum(l_quantity) from customer, orders, lineitem where tenant_id = 40 and o_orderkey in (select l_orderkey from lineitem group by l_orderkey having sum(l_quantity) &gt; 214) and c_custkey = o_custkey and o_orderkey = l_orderkey group by c_name, c_custkey, o_orderkey, o_orderdate, o_totalprice order by o_totalprice desc, o_orderdate limit 100;
+          <stringProp name="query">select c_name, c_custkey, o_orderkey, o_orderdate, o_totalprice, sum(l_quantity) from customer, orders, lineitem where tenant_id = 19 and o_orderkey in (select l_orderkey from lineitem group by l_orderkey having sum(l_quantity) &gt; 214) and c_custkey = o_custkey and o_orderkey = l_orderkey group by c_name, c_custkey, o_orderkey, o_orderdate, o_totalprice order by o_totalprice desc, o_orderdate limit 100;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -378,7 +378,7 @@ drop view revenue0;
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q19" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select sum(l_extendedprice* (1 - l_discount)) as revenue from lineitem, part where tenant_id = 40 and ((p_partkey = l_partkey and p_brand = &apos;Brand#24&apos; and p_container in (&apos;SM CasE&apos;, &apos;SM BOX&apos;, &apos;SM PACK&apos;, &apos;SM PKG&apos;) and l_quantity &gt;= 10 and l_quantity &lt;= 10 + 10 and p_size between 1 and 5 and l_shipmode in (&apos;AIR&apos;, &apos;AIR REG&apos;) and l_shipinstruct = &apos;DELIVER IN PERSON&apos;) or (p_partkey = l_partkey and p_brand = &apos;Brand#45&apos; and p_container in (&apos;MED BAG&apos;, &apos;MED BOX&apos;, &apos;MED PKG&apos;, &apos;MED PACK&apos;) and l_quantity &gt;= 12 and l_quantity &lt;= 12 + 10 and p_size between 1 and 10 and l_shipmode in (&apos;AIR&apos;, &apos;AIR REG&apos;) and l_shipinstruct = &apos;DELIVER IN PERSON&apos;) or (p_partkey = l_partkey and p_brand = &apos;Brand#33&apos; and p_container in (&apos;LG CasE&apos;, &apos;LG BOX&apos;, &apos;LG PACK&apos;, &apos;LG PKG&apos;) and l_quantity &gt;= 30 and l_quantity &lt;= 30 + 10 and p_size between 1 and 15 and l_shipmode in (&apos;AIR&apos;, &apos;AIR REG&apos;) and l_shipinstruct = &apos;DELIVER IN PERSON&apos;));
+          <stringProp name="query">select sum(l_extendedprice* (1 - l_discount)) as revenue from lineitem, part where tenant_id = 19 and ((p_partkey = l_partkey and p_brand = &apos;Brand#24&apos; and p_container in (&apos;SM CasE&apos;, &apos;SM BOX&apos;, &apos;SM PACK&apos;, &apos;SM PKG&apos;) and l_quantity &gt;= 10 and l_quantity &lt;= 10 + 10 and p_size between 1 and 5 and l_shipmode in (&apos;AIR&apos;, &apos;AIR REG&apos;) and l_shipinstruct = &apos;DELIVER IN PERSON&apos;) or (p_partkey = l_partkey and p_brand = &apos;Brand#45&apos; and p_container in (&apos;MED BAG&apos;, &apos;MED BOX&apos;, &apos;MED PKG&apos;, &apos;MED PACK&apos;) and l_quantity &gt;= 12 and l_quantity &lt;= 12 + 10 and p_size between 1 and 10 and l_shipmode in (&apos;AIR&apos;, &apos;AIR REG&apos;) and l_shipinstruct = &apos;DELIVER IN PERSON&apos;) or (p_partkey = l_partkey and p_brand = &apos;Brand#33&apos; and p_container in (&apos;LG CasE&apos;, &apos;LG BOX&apos;, &apos;LG PACK&apos;, &apos;LG PKG&apos;) and l_quantity &gt;= 30 and l_quantity &lt;= 30 + 10 and p_size between 1 and 15 and l_shipmode in (&apos;AIR&apos;, &apos;AIR REG&apos;) and l_shipinstruct = &apos;DELIVER IN PERSON&apos;));
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -392,7 +392,7 @@ drop view revenue0;
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q20" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select s_name, s_address from supplier, nation where tenant_id = 40 and s_suppkey in (select ps_suppkey from partsupp where tenant_id = 40 and ps_partkey in (select p_partkey from part where tenant_id = 40 and p_name like &apos;peach%&apos;) and ps_availqty &gt; (select 0.5 * sum(l_quantity) from lineitem where tenant_id = 40 and l_partkey = ps_partkey and l_suppkey = ps_suppkey and l_shipdate &gt;= date &apos;1996-01-01&apos; and l_shipdate &lt; date &apos;1996-01-01&apos; + interval &apos;1&apos; year)) and s_nationkey = n_nationkey and n_name = &apos;UNITED STATES&apos; order by s_name;
+          <stringProp name="query">select s_name, s_address from supplier, nation where tenant_id = 19 and s_suppkey in (select ps_suppkey from partsupp where tenant_id = 19 and ps_partkey in (select p_partkey from part where tenant_id = 19 and p_name like &apos;peach%&apos;) and ps_availqty &gt; (select 0.5 * sum(l_quantity) from lineitem where tenant_id = 19 and l_partkey = ps_partkey and l_suppkey = ps_suppkey and l_shipdate &gt;= date &apos;1996-01-01&apos; and l_shipdate &lt; date &apos;1996-01-01&apos; + interval &apos;1&apos; year)) and s_nationkey = n_nationkey and n_name = &apos;UNITED STATES&apos; order by s_name;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -406,7 +406,7 @@ drop view revenue0;
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q21" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select s_name, count(*) as numwait from supplier, lineitem l1, orders, nation where tenant_id = 40 and s_suppkey = l1.l_suppkey and o_orderkey = l1.l_orderkey and o_orderstatus = &apos;F&apos; and l1.l_receiptdate &gt; l1.l_commitdate and exists (select * from lineitem l2 where tenant_id = 40 and l2.l_orderkey = l1.l_orderkey and l2.l_suppkey &lt;&gt; l1.l_suppkey) and not exists (select * from lineitem l3 where tenant_id = 40 and l3.l_orderkey = l1.l_orderkey and l3.l_suppkey &lt;&gt; l1.l_suppkey and l3.l_receiptdate &gt; l3.l_commitdate) and s_nationkey = n_nationkey and n_name = &apos;MOZAMBIQUE&apos; group by s_name order by numwait desc, s_name limit 100;
+          <stringProp name="query">select s_name, count(*) as numwait from supplier, lineitem l1, orders, nation where tenant_id = 19 and s_suppkey = l1.l_suppkey and o_orderkey = l1.l_orderkey and o_orderstatus = &apos;F&apos; and l1.l_receiptdate &gt; l1.l_commitdate and exists (select * from lineitem l2 where tenant_id = 19 and l2.l_orderkey = l1.l_orderkey and l2.l_suppkey &lt;&gt; l1.l_suppkey) and not exists (select * from lineitem l3 where tenant_id = 19 and l3.l_orderkey = l1.l_orderkey and l3.l_suppkey &lt;&gt; l1.l_suppkey and l3.l_receiptdate &gt; l3.l_commitdate) and s_nationkey = n_nationkey and n_name = &apos;MOZAMBIQUE&apos; group by s_name order by numwait desc, s_name limit 100;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -420,7 +420,7 @@ drop view revenue0;
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q22" enabled="true">
           <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="query">select cntrycode, count(*) as numcust, sum(c_acctbal) as totacctbal from (select substring(c_phone from 1 for 2) as cntrycode, c_acctbal from customer where tenant_id = 40 and substring(c_phone from 1 for 2) in (&apos;34&apos;, &apos;20&apos;, &apos;23&apos;, &apos;33&apos;, &apos;18&apos;, &apos;10&apos;, &apos;30&apos;) and c_acctbal &gt; (select avg(c_acctbal) from customer where tenant_id = 40 and c_acctbal &gt; 0.00 and substring(c_phone from 1 for 2) in (&apos;34&apos;, &apos;20&apos;, &apos;23&apos;, &apos;33&apos;, &apos;18&apos;, &apos;10&apos;, &apos;30&apos;)) and not exists (select * from orders where tenant_id = 40 and o_custkey = c_custkey)) as custsale group by cntrycode order by cntrycode;
+          <stringProp name="query">select cntrycode, count(*) as numcust, sum(c_acctbal) as totacctbal from (select substring(c_phone from 1 for 2) as cntrycode, c_acctbal from customer where tenant_id = 19 and substring(c_phone from 1 for 2) in (&apos;34&apos;, &apos;20&apos;, &apos;23&apos;, &apos;33&apos;, &apos;18&apos;, &apos;10&apos;, &apos;30&apos;) and c_acctbal &gt; (select avg(c_acctbal) from customer where tenant_id = 19 and c_acctbal &gt; 0.00 and substring(c_phone from 1 for 2) in (&apos;34&apos;, &apos;20&apos;, &apos;23&apos;, &apos;33&apos;, &apos;18&apos;, &apos;10&apos;, &apos;30&apos;)) and not exists (select * from orders where tenant_id = 19 and o_custkey = c_custkey)) as custsale group by cntrycode order by cntrycode;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
@@ -432,7 +432,7 @@ drop view revenue0;
         </JDBCSampler>
         <hashTree/>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="RF1" enabled="true">
-          <stringProp name="dataSource"></stringProp>
+          <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Update Statement</stringProp>
           <stringProp name="query">INSERT INTO orders (o_orderkey, o_custkey, o_orderstatus, o_totalprice, o_orderdate, o_orderpriority, o_clerk, o_shippriority, o_comment, id) VALUES (721184562, 4576, F, 102385.58, 1996-10-15, 5-LOW, Clerk#000000153, 0, ly! requests solve qui, 40);
 </stringProp>
@@ -446,7 +446,7 @@ drop view revenue0;
         </JDBCSampler>
         <hashTree/>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="RF2" enabled="true">
-          <stringProp name="dataSource"></stringProp>
+          <stringProp name="dataSource">Power-test</stringProp>
           <stringProp name="queryType">Update Statement</stringProp>
           <stringProp name="query">DELETE * FROM orders WHERE o_orderkey = 721184562;
 </stringProp>

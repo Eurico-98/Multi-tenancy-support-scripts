@@ -18,7 +18,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.num_threads">25</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -32,11 +32,11 @@
           <stringProp name="connectionAge">5000</stringProp>
           <stringProp name="connectionProperties"></stringProp>
           <stringProp name="dataSource">Throughput-test-1</stringProp>
-          <stringProp name="dbUrl">jdbc:postgresql://test-instance.cob7aqndu7dk.eu-north-1.rds.amazonaws.com:5432/postgres</stringProp>
+          <stringProp name="dbUrl">jdbc:postgresql://a1-tt-1.cob7aqndu7dk.eu-north-1.rds.amazonaws.com:5432/postgres</stringProp>
           <stringProp name="driver">org.postgresql.Driver</stringProp>
           <stringProp name="initQuery"></stringProp>
           <boolProp name="keepAlive">true</boolProp>
-          <stringProp name="password">postgres</stringProp>
+          <stringProp name="password">BD_RDS_EC2_instances_172635</stringProp>
           <stringProp name="poolMax">0</stringProp>
           <boolProp name="preinit">false</boolProp>
           <stringProp name="timeout">10000</stringProp>
@@ -123,8 +123,8 @@
         <RandomOrderController guiclass="RandomOrderControllerGui" testclass="RandomOrderController" testname="Random Order Controller" enabled="true"/>
         <hashTree>
           <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Queries - Random loop count" enabled="true">
-            <stringProp name="maximumValue">105</stringProp>
-            <stringProp name="minimumValue">1</stringProp>
+            <stringProp name="maximumValue">50</stringProp>
+            <stringProp name="minimumValue">10</stringProp>
             <stringProp name="outputFormat"></stringProp>
             <boolProp name="perThread">true</boolProp>
             <stringProp name="randomSeed"></stringProp>

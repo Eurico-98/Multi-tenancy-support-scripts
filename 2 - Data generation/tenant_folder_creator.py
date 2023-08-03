@@ -11,7 +11,7 @@ source_dir = './dbgen'
 # specify the files you want to copy
 files_to_copy = ['dbgen', 'dists.dss']
 
-for i in range(1, 51):
+for i in range(1, 26):
     dir_name = os.path.join(base_dir, f'tenant_{i}')
     os.makedirs(dir_name, exist_ok=True)
     

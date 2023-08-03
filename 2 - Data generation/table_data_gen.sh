@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # total data size in MB
-total_data_size=100000
+total_data_size=30000
 min_size=500
-max_size=13000
-num_tenants=50
+max_size=2000
+num_tenants=25
 remaining_size=$total_data_size
 
 # assign random sizes to tenants
-for ((i=50; i<=$num_tenants; i++))
+for ((i=25; i<=$num_tenants; i++))
 do
 
     if [ $i -eq $num_tenants ]  # for the last tenant assign the remaining size
