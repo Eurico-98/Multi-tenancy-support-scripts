@@ -48,7 +48,7 @@ primary_keys = {'region': 'r_regionkey',
 # of values therefore it is required to increment the increment_ver in some extra amount to avoid equal keys
 increment_var = line_counts['tenant_1'] + 100000
 
-print(f'increment_var satarts at: {increment_var}')
+print(f'increment_var starts at: {increment_var}')
 
 # Open output file
 with open('adapt_DB_for_approach_2.sql', 'w') as output_file:
