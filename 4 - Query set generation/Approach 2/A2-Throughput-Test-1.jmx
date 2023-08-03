@@ -137,7 +137,7 @@
           </LoopController>
           <hashTree>
             <com.di.jmeter.config.ExtendedCsvDataSetConfig guiclass="com.di.jmeter.config.gui.ExtendedCsvDataSetConfigGui" testclass="com.di.jmeter.config.ExtendedCsvDataSetConfig" testname="Queries - Extended CSV Data Set Config" enabled="true">
-              <stringProp name="filename">C:\Users\eurico\Desktop\Github scripts\4 - Query set generation\Approach 2\A2-Throuput-test-query-set.csv</stringProp>
+              <stringProp name="filename">A2-Throuput-test-query-set.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames">query</stringProp>
               <boolProp name="ignoreFirstLine">false</boolProp>
@@ -181,7 +181,7 @@
           </LoopController>
           <hashTree>
             <com.di.jmeter.config.ExtendedCsvDataSetConfig guiclass="com.di.jmeter.config.gui.ExtendedCsvDataSetConfigGui" testclass="com.di.jmeter.config.ExtendedCsvDataSetConfig" testname="Q15 - Extended CSV Data Set Config" enabled="true">
-              <stringProp name="filename">C:\Users\eurico\Desktop\Github scripts\4 - Query set generation\Approach 2\A2-Throuput-test-Q15.csv</stringProp>
+              <stringProp name="filename">A2-Throuput-test-Q15.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames">QUERY_PART1,QUERY_PART2,QUERY_PART3</stringProp>
               <boolProp name="ignoreFirstLine">false</boolProp>
