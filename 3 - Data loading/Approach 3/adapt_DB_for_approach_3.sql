@@ -25,530 +25,546 @@ INSERT INTO GROUPS (g_group_id, g_Name) VALUES (1008, 'group_1008');
 INSERT INTO GROUPS (g_group_id, g_Name) VALUES (1009, 'group_1009');
 
 -- Insert entries in table tenant_groups to link tenants in groups
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (3, 1000);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (5, 1000);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (21, 1000);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (20, 1000);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (8, 1000);
 INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (18, 1000);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (11, 1000);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (19, 1000);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (12, 1000);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (4, 1000);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (19, 1001);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (3, 1001);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (11, 1001);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (5, 1000);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (14, 1001);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (18, 1001);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (20, 1001);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (22, 1001);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (7, 1001);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (21, 1001);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (23, 1001);
 INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (24, 1001);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (12, 1001);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (10, 1002);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (20, 1002);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (6, 1002);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (4, 1002);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (10, 1003);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (3, 1003);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (20, 1003);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (8, 1003);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (11, 1004);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (23, 1004);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (8, 1004);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (15, 1004);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (7, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (5, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (17, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (9, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (12, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (21, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (1, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (13, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (23, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (8, 1002);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (2, 1003);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (11, 1003);
 INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (5, 1004);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (20, 1004);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (18, 1004);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (19, 1004);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (21, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (18, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (3, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (15, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (8, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (6, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (4, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (5, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (9, 1005);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (21, 1004);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (24, 1004);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (6, 1004);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (4, 1004);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (24, 1005);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (23, 1005);
 INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (25, 1005);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (8, 1006);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (22, 1006);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (9, 1007);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (5, 1007);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (12, 1008);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (4, 1008);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (11, 1008);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (10, 1008);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (24, 1008);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (17, 1005);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (5, 1005);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (18, 1005);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (14, 1005);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (2, 1005);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (14, 1006);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (24, 1006);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (10, 1006);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (20, 1006);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (4, 1006);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (2, 1006);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (3, 1006);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (2, 1007);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (7, 1007);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (4, 1007);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (11, 1007);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (23, 1007);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (8, 1007);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (25, 1007);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (6, 1007);
 INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (3, 1008);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (14, 1008);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (6, 1008);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (19, 1008);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (21, 1008);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (25, 1008);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (12, 1008);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (11, 1008);
 INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (15, 1008);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (9, 1008);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (8, 1009);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (25, 1009);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (18, 1008);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (13, 1008);
 INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (22, 1009);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (20, 1009);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (3, 1009);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (17, 1009);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (1, 1009);
+INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (15, 1009);
 INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (24, 1009);
-INSERT INTO tenant_groups (t_tenant_id, g_group_id) VALUES (10, 1009);
 
     
     
 -- Updating commands for group_1000
--- Tenant_3
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 3 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 3 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 3 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 3 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 3 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 3 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
--- Tenant_5
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 5 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 5 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 5 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 5 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 5 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 5 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
--- Tenant_21
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 21 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 21 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 21 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 21 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 21 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 21 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
--- Tenant_20
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 20 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 20 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 20 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 20 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 20 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 20 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
+-- Tenant_8
+UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 8 LIMIT 391522);
+UPDATE orders SET tenant_id   = 1000 WHERE tenant_id = 8 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1000 LIMIT 309105);
+UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 8 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000 LIMIT 164856);
+UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 8 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1000 LIMIT 30910);
+UPDATE part SET tenant_id     = 1000 WHERE tenant_id = 8 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1000 LIMIT 41214);
+UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 8 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1000 LIMIT 2060);
 -- Tenant_18
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 18 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 18 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 18 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 18 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 18 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 18 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
--- Tenant_11
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 11 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 11 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 11 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 11 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 11 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 11 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
--- Tenant_19
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 19 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 19 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 19 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 19 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 19 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 19 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
--- Tenant_12
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 12 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 12 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 12 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 12 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 12 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 12 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
--- Tenant_4
-UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 4 LIMIT 111228);
-UPDATE orders SET tenant_id = 1000 WHERE tenant_id = 4 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 4 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000);
-UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 4 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1000);
-UPDATE part SET tenant_id = 1000 WHERE tenant_id = 4 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1000);
-UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 4 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1000);
+UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 18 LIMIT 391522);
+UPDATE orders SET tenant_id   = 1000 WHERE tenant_id = 18 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1000 LIMIT 309105);
+UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 18 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000 LIMIT 164856);
+UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 18 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1000 LIMIT 30910);
+UPDATE part SET tenant_id     = 1000 WHERE tenant_id = 18 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1000 LIMIT 41214);
+UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 18 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1000 LIMIT 2060);
+-- Tenant_5
+UPDATE lineitem SET tenant_id = 1000 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 5 LIMIT 391522);
+UPDATE orders SET tenant_id   = 1000 WHERE tenant_id = 5 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1000 LIMIT 309105);
+UPDATE partsupp SET tenant_id = 1000 WHERE tenant_id = 5 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1000 LIMIT 164856);
+UPDATE customer SET tenant_id = 1000 WHERE tenant_id = 5 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1000 LIMIT 30910);
+UPDATE part SET tenant_id     = 1000 WHERE tenant_id = 5 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1000 LIMIT 41214);
+UPDATE supplier SET tenant_id = 1000 WHERE tenant_id = 5 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1000 LIMIT 2060);
     
     
 -- Updating commands for group_1001
--- Tenant_19
-UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 19 LIMIT 8600);
-UPDATE orders SET tenant_id = 1001 WHERE tenant_id = 19 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 19 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 19 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1001);
-UPDATE part SET tenant_id = 1001 WHERE tenant_id = 19 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1001);
-UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 19 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1001);
--- Tenant_3
-UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 3 LIMIT 8600);
-UPDATE orders SET tenant_id = 1001 WHERE tenant_id = 3 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 3 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 3 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1001);
-UPDATE part SET tenant_id = 1001 WHERE tenant_id = 3 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1001);
-UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 3 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1001);
--- Tenant_11
-UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 11 LIMIT 8600);
-UPDATE orders SET tenant_id = 1001 WHERE tenant_id = 11 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 11 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 11 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1001);
-UPDATE part SET tenant_id = 1001 WHERE tenant_id = 11 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1001);
-UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 11 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1001);
+-- Tenant_14
+UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 14 LIMIT 238319);
+UPDATE orders SET tenant_id   = 1001 WHERE tenant_id = 14 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1001 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 14 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001 LIMIT 61821);
+UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 14 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1001 LIMIT 11591);
+UPDATE part SET tenant_id     = 1001 WHERE tenant_id = 14 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 14 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 772);
+-- Tenant_18
+UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 18 LIMIT 238319);
+UPDATE orders SET tenant_id   = 1001 WHERE tenant_id = 18 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1001 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 18 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001 LIMIT 61821);
+UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 18 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1001 LIMIT 11591);
+UPDATE part SET tenant_id     = 1001 WHERE tenant_id = 18 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 18 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 772);
+-- Tenant_20
+UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 20 LIMIT 238319);
+UPDATE orders SET tenant_id   = 1001 WHERE tenant_id = 20 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1001 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 20 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001 LIMIT 61821);
+UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 20 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1001 LIMIT 11591);
+UPDATE part SET tenant_id     = 1001 WHERE tenant_id = 20 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 20 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 772);
+-- Tenant_22
+UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 22 LIMIT 238319);
+UPDATE orders SET tenant_id   = 1001 WHERE tenant_id = 22 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1001 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 22 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001 LIMIT 61821);
+UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 22 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1001 LIMIT 11591);
+UPDATE part SET tenant_id     = 1001 WHERE tenant_id = 22 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 22 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 772);
+-- Tenant_7
+UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 7 LIMIT 238319);
+UPDATE orders SET tenant_id   = 1001 WHERE tenant_id = 7 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1001 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 7 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001 LIMIT 61821);
+UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 7 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1001 LIMIT 11591);
+UPDATE part SET tenant_id     = 1001 WHERE tenant_id = 7 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 7 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 772);
+-- Tenant_21
+UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 21 LIMIT 238319);
+UPDATE orders SET tenant_id   = 1001 WHERE tenant_id = 21 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1001 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 21 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001 LIMIT 61821);
+UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 21 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1001 LIMIT 11591);
+UPDATE part SET tenant_id     = 1001 WHERE tenant_id = 21 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 21 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 772);
+-- Tenant_23
+UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 23 LIMIT 238319);
+UPDATE orders SET tenant_id   = 1001 WHERE tenant_id = 23 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1001 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 23 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001 LIMIT 61821);
+UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 23 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1001 LIMIT 11591);
+UPDATE part SET tenant_id     = 1001 WHERE tenant_id = 23 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 23 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 772);
 -- Tenant_24
-UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 24 LIMIT 8600);
-UPDATE orders SET tenant_id = 1001 WHERE tenant_id = 24 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 24 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 24 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1001);
-UPDATE part SET tenant_id = 1001 WHERE tenant_id = 24 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1001);
-UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 24 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1001);
--- Tenant_12
-UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 12 LIMIT 8600);
-UPDATE orders SET tenant_id = 1001 WHERE tenant_id = 12 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 12 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001);
-UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 12 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1001);
-UPDATE part SET tenant_id = 1001 WHERE tenant_id = 12 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1001);
-UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 12 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1001);
+UPDATE lineitem SET tenant_id = 1001 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 24 LIMIT 238319);
+UPDATE orders SET tenant_id   = 1001 WHERE tenant_id = 24 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1001 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1001 WHERE tenant_id = 24 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1001 LIMIT 61821);
+UPDATE customer SET tenant_id = 1001 WHERE tenant_id = 24 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1001 LIMIT 11591);
+UPDATE part SET tenant_id     = 1001 WHERE tenant_id = 24 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1001 WHERE tenant_id = 24 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1001 LIMIT 772);
     
     
 -- Updating commands for group_1002
--- Tenant_10
-UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 10 LIMIT 730626);
-UPDATE orders SET tenant_id = 1002 WHERE tenant_id = 10 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1002);
-UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 10 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002);
-UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 10 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1002);
-UPDATE part SET tenant_id = 1002 WHERE tenant_id = 10 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1002);
-UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 10 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1002);
--- Tenant_20
-UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 20 LIMIT 730626);
-UPDATE orders SET tenant_id = 1002 WHERE tenant_id = 20 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1002);
-UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 20 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002);
-UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 20 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1002);
-UPDATE part SET tenant_id = 1002 WHERE tenant_id = 20 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1002);
-UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 20 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1002);
--- Tenant_6
-UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 6 LIMIT 730626);
-UPDATE orders SET tenant_id = 1002 WHERE tenant_id = 6 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1002);
-UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 6 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002);
-UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 6 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1002);
-UPDATE part SET tenant_id = 1002 WHERE tenant_id = 6 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1002);
-UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 6 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1002);
--- Tenant_4
-UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 4 LIMIT 730626);
-UPDATE orders SET tenant_id = 1002 WHERE tenant_id = 4 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1002);
-UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 4 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002);
-UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 4 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1002);
-UPDATE part SET tenant_id = 1002 WHERE tenant_id = 4 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1002);
-UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 4 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1002);
+-- Tenant_7
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 7 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 7 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 7 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 7 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 7 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 7 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_5
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 5 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 5 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 5 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 5 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 5 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 5 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_17
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 17 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 17 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 17 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 17 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 17 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 17 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_9
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 9 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 9 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 9 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 9 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 9 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 9 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_12
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 12 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 12 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 12 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 12 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 12 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 12 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_21
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 21 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 21 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 21 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 21 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 21 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 21 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_1
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 1 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 1 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 1 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 1 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 1 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 1 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_13
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 13 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 13 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 13 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 13 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 13 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 13 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_23
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 23 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 23 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 23 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 23 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 23 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 23 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
+-- Tenant_8
+UPDATE lineitem SET tenant_id = 1002 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 8 LIMIT 137263);
+UPDATE orders SET tenant_id   = 1002 WHERE tenant_id = 8 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1002 LIMIT 92731);
+UPDATE partsupp SET tenant_id = 1002 WHERE tenant_id = 8 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1002 LIMIT 49456);
+UPDATE customer SET tenant_id = 1002 WHERE tenant_id = 8 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1002 LIMIT 9273);
+UPDATE part SET tenant_id     = 1002 WHERE tenant_id = 8 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 12364);
+UPDATE supplier SET tenant_id = 1002 WHERE tenant_id = 8 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1002 LIMIT 618);
     
     
 -- Updating commands for group_1003
--- Tenant_10
-UPDATE lineitem SET tenant_id = 1003 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 10 LIMIT 292210);
-UPDATE orders SET tenant_id = 1003 WHERE tenant_id = 10 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1003);
-UPDATE partsupp SET tenant_id = 1003 WHERE tenant_id = 10 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1003);
-UPDATE customer SET tenant_id = 1003 WHERE tenant_id = 10 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1003);
-UPDATE part SET tenant_id = 1003 WHERE tenant_id = 10 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1003);
-UPDATE supplier SET tenant_id = 1003 WHERE tenant_id = 10 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1003);
--- Tenant_3
-UPDATE lineitem SET tenant_id = 1003 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 3 LIMIT 292210);
-UPDATE orders SET tenant_id = 1003 WHERE tenant_id = 3 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1003);
-UPDATE partsupp SET tenant_id = 1003 WHERE tenant_id = 3 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1003);
-UPDATE customer SET tenant_id = 1003 WHERE tenant_id = 3 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1003);
-UPDATE part SET tenant_id = 1003 WHERE tenant_id = 3 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1003);
-UPDATE supplier SET tenant_id = 1003 WHERE tenant_id = 3 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1003);
--- Tenant_20
-UPDATE lineitem SET tenant_id = 1003 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 20 LIMIT 292210);
-UPDATE orders SET tenant_id = 1003 WHERE tenant_id = 20 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1003);
-UPDATE partsupp SET tenant_id = 1003 WHERE tenant_id = 20 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1003);
-UPDATE customer SET tenant_id = 1003 WHERE tenant_id = 20 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1003);
-UPDATE part SET tenant_id = 1003 WHERE tenant_id = 20 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1003);
-UPDATE supplier SET tenant_id = 1003 WHERE tenant_id = 20 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1003);
--- Tenant_8
-UPDATE lineitem SET tenant_id = 1003 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 8 LIMIT 292210);
-UPDATE orders SET tenant_id = 1003 WHERE tenant_id = 8 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1003);
-UPDATE partsupp SET tenant_id = 1003 WHERE tenant_id = 8 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1003);
-UPDATE customer SET tenant_id = 1003 WHERE tenant_id = 8 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1003);
-UPDATE part SET tenant_id = 1003 WHERE tenant_id = 8 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1003);
-UPDATE supplier SET tenant_id = 1003 WHERE tenant_id = 8 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1003);
+-- Tenant_2
+UPDATE lineitem SET tenant_id = 1003 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 2 LIMIT 1826579);
+UPDATE orders SET tenant_id   = 1003 WHERE tenant_id = 2 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1003 LIMIT 463657);
+UPDATE partsupp SET tenant_id = 1003 WHERE tenant_id = 2 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1003 LIMIT 247284);
+UPDATE customer SET tenant_id = 1003 WHERE tenant_id = 2 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1003 LIMIT 46365);
+UPDATE part SET tenant_id     = 1003 WHERE tenant_id = 2 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1003 LIMIT 61821);
+UPDATE supplier SET tenant_id = 1003 WHERE tenant_id = 2 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1003 LIMIT 3091);
+-- Tenant_11
+UPDATE lineitem SET tenant_id = 1003 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 11 LIMIT 1826579);
+UPDATE orders SET tenant_id   = 1003 WHERE tenant_id = 11 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1003 LIMIT 463657);
+UPDATE partsupp SET tenant_id = 1003 WHERE tenant_id = 11 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1003 LIMIT 247284);
+UPDATE customer SET tenant_id = 1003 WHERE tenant_id = 11 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1003 LIMIT 46365);
+UPDATE part SET tenant_id     = 1003 WHERE tenant_id = 11 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1003 LIMIT 61821);
+UPDATE supplier SET tenant_id = 1003 WHERE tenant_id = 11 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1003 LIMIT 3091);
     
     
 -- Updating commands for group_1004
--- Tenant_11
-UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 11 LIMIT 436304);
-UPDATE orders SET tenant_id = 1004 WHERE tenant_id = 11 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 11 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 11 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1004);
-UPDATE part SET tenant_id = 1004 WHERE tenant_id = 11 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1004);
-UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 11 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1004);
--- Tenant_23
-UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 23 LIMIT 436304);
-UPDATE orders SET tenant_id = 1004 WHERE tenant_id = 23 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 23 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 23 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1004);
-UPDATE part SET tenant_id = 1004 WHERE tenant_id = 23 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1004);
-UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 23 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1004);
--- Tenant_8
-UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 8 LIMIT 436304);
-UPDATE orders SET tenant_id = 1004 WHERE tenant_id = 8 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 8 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 8 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1004);
-UPDATE part SET tenant_id = 1004 WHERE tenant_id = 8 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1004);
-UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 8 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1004);
--- Tenant_15
-UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 15 LIMIT 436304);
-UPDATE orders SET tenant_id = 1004 WHERE tenant_id = 15 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 15 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 15 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1004);
-UPDATE part SET tenant_id = 1004 WHERE tenant_id = 15 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1004);
-UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 15 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1004);
 -- Tenant_5
-UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 5 LIMIT 436304);
-UPDATE orders SET tenant_id = 1004 WHERE tenant_id = 5 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 5 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 5 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1004);
-UPDATE part SET tenant_id = 1004 WHERE tenant_id = 5 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1004);
-UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 5 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1004);
--- Tenant_20
-UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 20 LIMIT 436304);
-UPDATE orders SET tenant_id = 1004 WHERE tenant_id = 20 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 20 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 20 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1004);
-UPDATE part SET tenant_id = 1004 WHERE tenant_id = 20 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1004);
-UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 20 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1004);
--- Tenant_18
-UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 18 LIMIT 436304);
-UPDATE orders SET tenant_id = 1004 WHERE tenant_id = 18 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 18 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 18 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1004);
-UPDATE part SET tenant_id = 1004 WHERE tenant_id = 18 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1004);
-UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 18 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1004);
--- Tenant_19
-UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 19 LIMIT 436304);
-UPDATE orders SET tenant_id = 1004 WHERE tenant_id = 19 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 19 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004);
-UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 19 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1004);
-UPDATE part SET tenant_id = 1004 WHERE tenant_id = 19 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1004);
-UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 19 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1004);
+UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 5 LIMIT 77064);
+UPDATE orders SET tenant_id   = 1004 WHERE tenant_id = 5 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1004 LIMIT 185463);
+UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 5 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004 LIMIT 98913);
+UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 5 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1004 LIMIT 18546);
+UPDATE part SET tenant_id     = 1004 WHERE tenant_id = 5 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 24728);
+UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 5 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 1236);
+-- Tenant_21
+UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 21 LIMIT 77064);
+UPDATE orders SET tenant_id   = 1004 WHERE tenant_id = 21 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1004 LIMIT 185463);
+UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 21 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004 LIMIT 98913);
+UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 21 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1004 LIMIT 18546);
+UPDATE part SET tenant_id     = 1004 WHERE tenant_id = 21 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 24728);
+UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 21 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 1236);
+-- Tenant_24
+UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 24 LIMIT 77064);
+UPDATE orders SET tenant_id   = 1004 WHERE tenant_id = 24 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1004 LIMIT 185463);
+UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 24 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004 LIMIT 98913);
+UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 24 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1004 LIMIT 18546);
+UPDATE part SET tenant_id     = 1004 WHERE tenant_id = 24 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 24728);
+UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 24 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 1236);
+-- Tenant_6
+UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 6 LIMIT 77064);
+UPDATE orders SET tenant_id   = 1004 WHERE tenant_id = 6 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1004 LIMIT 185463);
+UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 6 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004 LIMIT 98913);
+UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 6 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1004 LIMIT 18546);
+UPDATE part SET tenant_id     = 1004 WHERE tenant_id = 6 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 24728);
+UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 6 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 1236);
+-- Tenant_4
+UPDATE lineitem SET tenant_id = 1004 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 4 LIMIT 77064);
+UPDATE orders SET tenant_id   = 1004 WHERE tenant_id = 4 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1004 LIMIT 185463);
+UPDATE partsupp SET tenant_id = 1004 WHERE tenant_id = 4 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1004 LIMIT 98913);
+UPDATE customer SET tenant_id = 1004 WHERE tenant_id = 4 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1004 LIMIT 18546);
+UPDATE part SET tenant_id     = 1004 WHERE tenant_id = 4 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 24728);
+UPDATE supplier SET tenant_id = 1004 WHERE tenant_id = 4 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1004 LIMIT 1236);
     
     
 -- Updating commands for group_1005
--- Tenant_21
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 21 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 21 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 21 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 21 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 21 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 21 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
--- Tenant_18
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 18 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 18 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 18 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 18 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 18 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 18 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
--- Tenant_3
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 3 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 3 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 3 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 3 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 3 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 3 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
--- Tenant_15
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 15 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 15 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 15 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 15 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 15 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 15 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
--- Tenant_8
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 8 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 8 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 8 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 8 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 8 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 8 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
--- Tenant_6
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 6 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 6 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 6 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 6 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 6 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 6 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
--- Tenant_4
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 4 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 4 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 4 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 4 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 4 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 4 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
--- Tenant_5
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 5 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 5 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 5 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 5 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 5 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 5 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
--- Tenant_9
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 9 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 9 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 9 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 9 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 9 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 9 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
+-- Tenant_24
+UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 24 LIMIT 198585);
+UPDATE orders SET tenant_id   = 1005 WHERE tenant_id = 24 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1005 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 24 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005 LIMIT 61821);
+UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 24 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1005 LIMIT 11591);
+UPDATE part SET tenant_id     = 1005 WHERE tenant_id = 24 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 24 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 772);
+-- Tenant_23
+UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 23 LIMIT 198585);
+UPDATE orders SET tenant_id   = 1005 WHERE tenant_id = 23 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1005 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 23 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005 LIMIT 61821);
+UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 23 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1005 LIMIT 11591);
+UPDATE part SET tenant_id     = 1005 WHERE tenant_id = 23 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 23 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 772);
 -- Tenant_25
-UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 25 LIMIT 213363);
-UPDATE orders SET tenant_id = 1005 WHERE tenant_id = 25 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 25 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005);
-UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 25 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1005);
-UPDATE part SET tenant_id = 1005 WHERE tenant_id = 25 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1005);
-UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 25 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1005);
+UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 25 LIMIT 198585);
+UPDATE orders SET tenant_id   = 1005 WHERE tenant_id = 25 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1005 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 25 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005 LIMIT 61821);
+UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 25 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1005 LIMIT 11591);
+UPDATE part SET tenant_id     = 1005 WHERE tenant_id = 25 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 25 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 772);
+-- Tenant_17
+UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 17 LIMIT 198585);
+UPDATE orders SET tenant_id   = 1005 WHERE tenant_id = 17 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1005 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 17 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005 LIMIT 61821);
+UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 17 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1005 LIMIT 11591);
+UPDATE part SET tenant_id     = 1005 WHERE tenant_id = 17 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 17 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 772);
+-- Tenant_5
+UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 5 LIMIT 198585);
+UPDATE orders SET tenant_id   = 1005 WHERE tenant_id = 5 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1005 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 5 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005 LIMIT 61821);
+UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 5 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1005 LIMIT 11591);
+UPDATE part SET tenant_id     = 1005 WHERE tenant_id = 5 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 5 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 772);
+-- Tenant_18
+UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 18 LIMIT 198585);
+UPDATE orders SET tenant_id   = 1005 WHERE tenant_id = 18 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1005 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 18 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005 LIMIT 61821);
+UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 18 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1005 LIMIT 11591);
+UPDATE part SET tenant_id     = 1005 WHERE tenant_id = 18 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 18 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 772);
+-- Tenant_14
+UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 14 LIMIT 198585);
+UPDATE orders SET tenant_id   = 1005 WHERE tenant_id = 14 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1005 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 14 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005 LIMIT 61821);
+UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 14 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1005 LIMIT 11591);
+UPDATE part SET tenant_id     = 1005 WHERE tenant_id = 14 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 14 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 772);
+-- Tenant_2
+UPDATE lineitem SET tenant_id = 1005 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 2 LIMIT 198585);
+UPDATE orders SET tenant_id   = 1005 WHERE tenant_id = 2 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1005 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1005 WHERE tenant_id = 2 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1005 LIMIT 61821);
+UPDATE customer SET tenant_id = 1005 WHERE tenant_id = 2 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1005 LIMIT 11591);
+UPDATE part SET tenant_id     = 1005 WHERE tenant_id = 2 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1005 WHERE tenant_id = 2 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1005 LIMIT 772);
     
     
 -- Updating commands for group_1006
--- Tenant_8
-UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 8 LIMIT 776897);
-UPDATE orders SET tenant_id = 1006 WHERE tenant_id = 8 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1006);
-UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 8 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006);
-UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 8 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1006);
-UPDATE part SET tenant_id = 1006 WHERE tenant_id = 8 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1006);
-UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 8 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1006);
--- Tenant_22
-UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 22 LIMIT 776897);
-UPDATE orders SET tenant_id = 1006 WHERE tenant_id = 22 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1006);
-UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 22 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006);
-UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 22 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1006);
-UPDATE part SET tenant_id = 1006 WHERE tenant_id = 22 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1006);
-UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 22 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1006);
+-- Tenant_14
+UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 14 LIMIT 501901);
+UPDATE orders SET tenant_id   = 1006 WHERE tenant_id = 14 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1006 LIMIT 132473);
+UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 14 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006 LIMIT 70652);
+UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 14 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1006 LIMIT 13247);
+UPDATE part SET tenant_id     = 1006 WHERE tenant_id = 14 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 17663);
+UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 14 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 883);
+-- Tenant_24
+UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 24 LIMIT 501901);
+UPDATE orders SET tenant_id   = 1006 WHERE tenant_id = 24 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1006 LIMIT 132473);
+UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 24 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006 LIMIT 70652);
+UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 24 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1006 LIMIT 13247);
+UPDATE part SET tenant_id     = 1006 WHERE tenant_id = 24 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 17663);
+UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 24 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 883);
+-- Tenant_10
+UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 10 LIMIT 501901);
+UPDATE orders SET tenant_id   = 1006 WHERE tenant_id = 10 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1006 LIMIT 132473);
+UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 10 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006 LIMIT 70652);
+UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 10 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1006 LIMIT 13247);
+UPDATE part SET tenant_id     = 1006 WHERE tenant_id = 10 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 17663);
+UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 10 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 883);
+-- Tenant_20
+UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 20 LIMIT 501901);
+UPDATE orders SET tenant_id   = 1006 WHERE tenant_id = 20 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1006 LIMIT 132473);
+UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 20 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006 LIMIT 70652);
+UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 20 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1006 LIMIT 13247);
+UPDATE part SET tenant_id     = 1006 WHERE tenant_id = 20 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 17663);
+UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 20 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 883);
+-- Tenant_4
+UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 4 LIMIT 501901);
+UPDATE orders SET tenant_id   = 1006 WHERE tenant_id = 4 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1006 LIMIT 132473);
+UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 4 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006 LIMIT 70652);
+UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 4 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1006 LIMIT 13247);
+UPDATE part SET tenant_id     = 1006 WHERE tenant_id = 4 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 17663);
+UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 4 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 883);
+-- Tenant_2
+UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 2 LIMIT 501901);
+UPDATE orders SET tenant_id   = 1006 WHERE tenant_id = 2 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1006 LIMIT 132473);
+UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 2 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006 LIMIT 70652);
+UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 2 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1006 LIMIT 13247);
+UPDATE part SET tenant_id     = 1006 WHERE tenant_id = 2 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 17663);
+UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 2 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 883);
+-- Tenant_3
+UPDATE lineitem SET tenant_id = 1006 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 3 LIMIT 501901);
+UPDATE orders SET tenant_id   = 1006 WHERE tenant_id = 3 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1006 LIMIT 132473);
+UPDATE partsupp SET tenant_id = 1006 WHERE tenant_id = 3 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1006 LIMIT 70652);
+UPDATE customer SET tenant_id = 1006 WHERE tenant_id = 3 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1006 LIMIT 13247);
+UPDATE part SET tenant_id     = 1006 WHERE tenant_id = 3 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 17663);
+UPDATE supplier SET tenant_id = 1006 WHERE tenant_id = 3 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1006 LIMIT 883);
     
     
 -- Updating commands for group_1007
--- Tenant_9
-UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 9 LIMIT 1695583);
-UPDATE orders SET tenant_id = 1007 WHERE tenant_id = 9 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1007);
-UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 9 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007);
-UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 9 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1007);
-UPDATE part SET tenant_id = 1007 WHERE tenant_id = 9 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1007);
-UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 9 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1007);
--- Tenant_5
-UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 5 LIMIT 1695583);
-UPDATE orders SET tenant_id = 1007 WHERE tenant_id = 5 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1007);
-UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 5 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007);
-UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 5 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1007);
-UPDATE part SET tenant_id = 1007 WHERE tenant_id = 5 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1007);
-UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 5 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1007);
+-- Tenant_2
+UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 2 LIMIT 347157);
+UPDATE orders SET tenant_id   = 1007 WHERE tenant_id = 2 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1007 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 2 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007 LIMIT 61821);
+UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 2 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1007 LIMIT 11591);
+UPDATE part SET tenant_id     = 1007 WHERE tenant_id = 2 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 2 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 772);
+-- Tenant_7
+UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 7 LIMIT 347157);
+UPDATE orders SET tenant_id   = 1007 WHERE tenant_id = 7 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1007 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 7 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007 LIMIT 61821);
+UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 7 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1007 LIMIT 11591);
+UPDATE part SET tenant_id     = 1007 WHERE tenant_id = 7 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 7 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 772);
+-- Tenant_4
+UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 4 LIMIT 347157);
+UPDATE orders SET tenant_id   = 1007 WHERE tenant_id = 4 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1007 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 4 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007 LIMIT 61821);
+UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 4 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1007 LIMIT 11591);
+UPDATE part SET tenant_id     = 1007 WHERE tenant_id = 4 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 4 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 772);
+-- Tenant_11
+UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 11 LIMIT 347157);
+UPDATE orders SET tenant_id   = 1007 WHERE tenant_id = 11 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1007 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 11 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007 LIMIT 61821);
+UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 11 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1007 LIMIT 11591);
+UPDATE part SET tenant_id     = 1007 WHERE tenant_id = 11 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 11 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 772);
+-- Tenant_23
+UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 23 LIMIT 347157);
+UPDATE orders SET tenant_id   = 1007 WHERE tenant_id = 23 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1007 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 23 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007 LIMIT 61821);
+UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 23 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1007 LIMIT 11591);
+UPDATE part SET tenant_id     = 1007 WHERE tenant_id = 23 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 23 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 772);
+-- Tenant_8
+UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 8 LIMIT 347157);
+UPDATE orders SET tenant_id   = 1007 WHERE tenant_id = 8 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1007 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 8 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007 LIMIT 61821);
+UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 8 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1007 LIMIT 11591);
+UPDATE part SET tenant_id     = 1007 WHERE tenant_id = 8 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 8 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 772);
+-- Tenant_25
+UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 25 LIMIT 347157);
+UPDATE orders SET tenant_id   = 1007 WHERE tenant_id = 25 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1007 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 25 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007 LIMIT 61821);
+UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 25 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1007 LIMIT 11591);
+UPDATE part SET tenant_id     = 1007 WHERE tenant_id = 25 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 25 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 772);
+-- Tenant_6
+UPDATE lineitem SET tenant_id = 1007 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 6 LIMIT 347157);
+UPDATE orders SET tenant_id   = 1007 WHERE tenant_id = 6 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1007 LIMIT 115914);
+UPDATE partsupp SET tenant_id = 1007 WHERE tenant_id = 6 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1007 LIMIT 61821);
+UPDATE customer SET tenant_id = 1007 WHERE tenant_id = 6 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1007 LIMIT 11591);
+UPDATE part SET tenant_id     = 1007 WHERE tenant_id = 6 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 15455);
+UPDATE supplier SET tenant_id = 1007 WHERE tenant_id = 6 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1007 LIMIT 772);
     
     
 -- Updating commands for group_1008
--- Tenant_12
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 12 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 12 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 12 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 12 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 12 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 12 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
--- Tenant_4
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 4 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 4 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 4 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 4 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 4 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 4 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
--- Tenant_11
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 11 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 11 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 11 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 11 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 11 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 11 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
--- Tenant_10
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 10 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 10 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 10 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 10 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 10 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 10 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
--- Tenant_24
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 24 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 24 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 24 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 24 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 24 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 24 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
 -- Tenant_3
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 3 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 3 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 3 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 3 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 3 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 3 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
--- Tenant_14
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 14 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 14 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 14 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 14 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 14 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 14 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
--- Tenant_6
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 6 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 6 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 6 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 6 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 6 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 6 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 3 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 3 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 3 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 3 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 3 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 3 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
+-- Tenant_19
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 19 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 19 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 19 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 19 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 19 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 19 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
+-- Tenant_21
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 21 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 21 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 21 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 21 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 21 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 21 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
+-- Tenant_25
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 25 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 25 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 25 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 25 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 25 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 25 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
+-- Tenant_12
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 12 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 12 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 12 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 12 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 12 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 12 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
+-- Tenant_11
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 11 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 11 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 11 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 11 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 11 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 11 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
 -- Tenant_15
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 15 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 15 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 15 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 15 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 15 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 15 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
--- Tenant_9
-UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 9 LIMIT 190165);
-UPDATE orders SET tenant_id = 1008 WHERE tenant_id = 9 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 9 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008);
-UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 9 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1008);
-UPDATE part SET tenant_id = 1008 WHERE tenant_id = 9 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1008);
-UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 9 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1008);
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 15 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 15 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 15 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 15 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 15 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 15 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
+-- Tenant_18
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 18 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 18 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 18 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 18 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 18 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 18 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
+-- Tenant_13
+UPDATE lineitem SET tenant_id = 1008 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 13 LIMIT 397130);
+UPDATE orders SET tenant_id   = 1008 WHERE tenant_id = 13 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1008 LIMIT 103035);
+UPDATE partsupp SET tenant_id = 1008 WHERE tenant_id = 13 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1008 LIMIT 54952);
+UPDATE customer SET tenant_id = 1008 WHERE tenant_id = 13 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1008 LIMIT 10303);
+UPDATE part SET tenant_id     = 1008 WHERE tenant_id = 13 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 13738);
+UPDATE supplier SET tenant_id = 1008 WHERE tenant_id = 13 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1008 LIMIT 686);
     
     
 -- Updating commands for group_1009
--- Tenant_8
-UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 8 LIMIT 305385);
-UPDATE orders SET tenant_id = 1009 WHERE tenant_id = 8 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 8 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 8 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1009);
-UPDATE part SET tenant_id = 1009 WHERE tenant_id = 8 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1009);
-UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 8 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1009);
--- Tenant_25
-UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 25 LIMIT 305385);
-UPDATE orders SET tenant_id = 1009 WHERE tenant_id = 25 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 25 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 25 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1009);
-UPDATE part SET tenant_id = 1009 WHERE tenant_id = 25 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1009);
-UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 25 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1009);
 -- Tenant_22
-UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 22 LIMIT 305385);
-UPDATE orders SET tenant_id = 1009 WHERE tenant_id = 22 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 22 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 22 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1009);
-UPDATE part SET tenant_id = 1009 WHERE tenant_id = 22 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1009);
-UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 22 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1009);
--- Tenant_20
-UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 20 LIMIT 305385);
-UPDATE orders SET tenant_id = 1009 WHERE tenant_id = 20 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 20 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 20 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1009);
-UPDATE part SET tenant_id = 1009 WHERE tenant_id = 20 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1009);
-UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 20 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1009);
--- Tenant_3
-UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 3 LIMIT 305385);
-UPDATE orders SET tenant_id = 1009 WHERE tenant_id = 3 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 3 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 3 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1009);
-UPDATE part SET tenant_id = 1009 WHERE tenant_id = 3 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1009);
-UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 3 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1009);
--- Tenant_17
-UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 17 LIMIT 305385);
-UPDATE orders SET tenant_id = 1009 WHERE tenant_id = 17 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 17 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 17 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1009);
-UPDATE part SET tenant_id = 1009 WHERE tenant_id = 17 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1009);
-UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 17 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1009);
+UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 22 LIMIT 688410);
+UPDATE orders SET tenant_id   = 1009 WHERE tenant_id = 22 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1009 LIMIT 231828);
+UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 22 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009 LIMIT 123642);
+UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 22 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1009 LIMIT 23182);
+UPDATE part SET tenant_id     = 1009 WHERE tenant_id = 22 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1009 LIMIT 30910);
+UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 22 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1009 LIMIT 1545);
+-- Tenant_1
+UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 1 LIMIT 688410);
+UPDATE orders SET tenant_id   = 1009 WHERE tenant_id = 1 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1009 LIMIT 231828);
+UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 1 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009 LIMIT 123642);
+UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 1 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1009 LIMIT 23182);
+UPDATE part SET tenant_id     = 1009 WHERE tenant_id = 1 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1009 LIMIT 30910);
+UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 1 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1009 LIMIT 1545);
+-- Tenant_15
+UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 15 LIMIT 688410);
+UPDATE orders SET tenant_id   = 1009 WHERE tenant_id = 15 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1009 LIMIT 231828);
+UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 15 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009 LIMIT 123642);
+UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 15 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1009 LIMIT 23182);
+UPDATE part SET tenant_id     = 1009 WHERE tenant_id = 15 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1009 LIMIT 30910);
+UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 15 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1009 LIMIT 1545);
 -- Tenant_24
-UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 24 LIMIT 305385);
-UPDATE orders SET tenant_id = 1009 WHERE tenant_id = 24 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 24 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 24 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1009);
-UPDATE part SET tenant_id = 1009 WHERE tenant_id = 24 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1009);
-UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 24 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1009);
--- Tenant_10
-UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 10 LIMIT 305385);
-UPDATE orders SET tenant_id = 1009 WHERE tenant_id = 10 AND o_orderkey IN (SELECT l_orderkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 10 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009);
-UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 10 AND c_custkey IN (SELECT o_custkey FROM orders WHERE tenant_id = 1009);
-UPDATE part SET tenant_id = 1009 WHERE tenant_id = 10 AND p_partkey IN (SELECT ps_partkey FROM partsupp WHERE tenant_id = 1009);
-UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 10 AND s_suppkey IN (SELECT ps_suppkey FROM partsupp WHERE tenant_id = 1009);
+UPDATE lineitem SET tenant_id = 1009 WHERE ctid IN (SELECT ctid FROM lineitem WHERE tenant_id = 24 LIMIT 688410);
+UPDATE orders SET tenant_id   = 1009 WHERE tenant_id = 24 AND o_orderkey               IN (SELECT l_orderkey FROM lineitem           WHERE tenant_id = 1009 LIMIT 231828);
+UPDATE partsupp SET tenant_id = 1009 WHERE tenant_id = 24 AND (ps_partkey, ps_suppkey) IN (SELECT l_partkey, l_suppkey FROM lineitem WHERE tenant_id = 1009 LIMIT 123642);
+UPDATE customer SET tenant_id = 1009 WHERE tenant_id = 24 AND c_custkey                IN (SELECT o_custkey FROM orders              WHERE tenant_id = 1009 LIMIT 23182);
+UPDATE part SET tenant_id     = 1009 WHERE tenant_id = 24 AND p_partkey                IN (SELECT ps_partkey FROM partsupp           WHERE tenant_id = 1009 LIMIT 30910);
+UPDATE supplier SET tenant_id = 1009 WHERE tenant_id = 24 AND s_suppkey                IN (SELECT ps_suppkey FROM partsupp           WHERE tenant_id = 1009 LIMIT 1545);

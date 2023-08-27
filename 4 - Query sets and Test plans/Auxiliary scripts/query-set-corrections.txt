@@ -1,0 +1,27 @@
+sql_lines_copy_with_everythin_to_replace = {
+    "from part, supplier, partsupp, nation, region where tenant_id = 1000 and ":"from part, supplier, partsupp, nation, region where p_tenant_id = 1000 and s_tenant_id = 1000 and ps_tenant_id = 1000 and ",
+    "from partsupp, supplier, nation, region where tenant_id = 1000 and ":"from partsupp, supplier, nation, region where ps_tenant_id = 1000 and s_tenant_id = 1000 and ",
+    "from customer, orders, lineitem where tenant_id = 1000 and ":"from customer, orders, lineitem where c_tenant_id = 1000 and o_tenant_id = 1000 and l_tenant_id = 1000 and ",
+    "from orders where tenant_id = 1000 and ":"from orders where o_tenant_id = 1000 and ",
+    "from lineitem where tenant_id = 1000 and ":"from lineitem where l_tenant_id = 1000 and ",
+    "from customer, orders, lineitem, supplier, nation, region where tenant_id = 1000 and ":"from customer, orders, lineitem, supplier, nation, region where c_tenant_id = 1000 and o_tenant_id = 1000 and l_tenant_id = 1000 and s_tenant_id = 1000 and ",
+    "from supplier, lineitem, orders, customer, nation n1, nation n2 where tenant_id = 1000 and ":"from supplier, lineitem, orders, customer, nation n1, nation n2 where s_tenant_id = 1000 and l_tenant_id = 1000 and o_tenant_id = 1000 and c_tenant_id = 1000 and ",
+    "from part, supplier, lineitem, orders, customer, nation n1, nation n2, region where tenant_id = 1000 and ":"from part, supplier, lineitem, orders, customer, nation n1, nation n2, region where p_tenant_id = 1000 and s_tenant_id = 1000 and l_tenant_id = 1000 and o_tenant_id = 1000 and c_tenant_id = 1000 and ",
+    "from part, supplier, lineitem, partsupp, orders, nation where tenant_id = 1000 and ":"from part, supplier, lineitem, partsupp, orders, nation where p_tenant_id = 1000 and s_tenant_id = 1000 and l_tenant_id = 1000 and ps_tenant_id = 1000 and o_tenant_id = 1000 and ",
+    "from customer, orders, lineitem, nation where tenant_id = 1000 and ":"from customer, orders, lineitem, nation where c_tenant_id = 1000 and o_tenant_id = 1000 and l_tenant_id = 1000 and ",
+    "from partsupp, supplier, nation where tenant_id = 1000 and ":"from partsupp, supplier, nation where ps_tenant_id = 1000 and s_tenant_id = 1000 and ",
+    "from partsupp, supplier, nation where tenant_id = 1000 and ":"from partsupp, supplier, nation where ps_tenant_id = 1000 and s_tenant_id = 1000 and ",
+    "from orders, lineitem where tenant_id = 1000 and ":"from orders, lineitem where o_tenant_id = 1000 and l_tenant_id = 1000 and ",
+    "from customer left outer join orders on c_custkey = o_custkey and o_comment not like '%pending%accounts%'":"from customer left outer join orders on c_custkey = o_custkey and o_comment not like '%pending%accounts%' where c_tenant_id = 1000",
+    "from lineitem, part where tenant_id = 1000 and ":"from lineitem, part where l_tenant_id = 1000 and p_tenant_id = 1000 and ",
+    "from partsupp, part where tenant_id = 1000 and ":"from partsupp, part where ps_tenant_id = 1000 and p_tenant_id = 1000 and ",
+    "from supplier where tenant_id = 1000 and ":"from supplier where s_tenant_id = 1000 and ",
+    "from customer, orders, lineitem where tenant_id = 1000 and ":"from customer, orders, lineitem where c_tenant_id = 1000 and o_tenant_id = 1000 and l_tenant_id = 1000 and ",
+    "( select l_orderkey from lineitem group by":"from lineitem where l_tenant_id = 1000 ",
+    "from lineitem, part where tenant_id = 1000 and ":"from lineitem, part where l_tenant_id = 1000 and p_tenant_id = 1000 and (", --> nesta nao esquecer de acrescentar ); no final da query
+    "from supplier, lineitem l1, orders, nation where tenant_id = 1000 and ":"from supplier, lineitem l1, orders, nation where s_tenant_id = 1000 and l1.l_tenant_id = 1000 and o_tenant_id = 1000 and ",
+    "from lineitem l2 where tenant_id = 1000 and ":"from lineitem l2 where l2.l_tenant_id = 1000 and ",
+    "from lineitem l3 where tenant_id = 1000 and ":"from lineitem l3 where l3.l_tenant_id = 1000 and ",
+    "from customer where tenant_id = 1000 and ":"from customer where c_tenant_id = 1000 and ",
+    "from orders where tenant_id = 1000 and ":"from orders where o_tenant_id = 1000 and "
+}

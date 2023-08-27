@@ -1,0 +1,21 @@
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using A3-Power-Test.jmx
+Starting standalone test @ 2023 Aug 16 16:53:37 UTC (1692204817826)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:02:25 =    0.0/s Avg: 144726 Min: 144726 Max: 144726 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      1 in 00:00:28 =    0.0/s Avg: 28057 Min: 28057 Max: 28057 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =      2 in 00:02:53 =    0.0/s Avg: 86391 Min: 28057 Max: 144726 Err:     0 (0.00%)
+summary +      4 in 00:03:03 =    0.0/s Avg: 45772 Min:  1879 Max: 139712 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =      6 in 00:05:56 =    0.0/s Avg: 59311 Min:  1879 Max: 144726 Err:     0 (0.00%)
+summary +      6 in 00:10:58 =    0.0/s Avg: 109613 Min:  2943 Max: 448851 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =     12 in 00:16:54 =    0.0/s Avg: 84462 Min:  1879 Max: 448851 Err:     0 (0.00%)
+summary +      7 in 00:06:32 =    0.0/s Avg: 55984 Min: 18355 Max: 137914 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =     19 in 00:23:26 =    0.0/s Avg: 73970 Min:  1879 Max: 448851 Err:     0 (0.00%)
+summary +      3 in 00:00:22 =    0.1/s Avg:  7351 Min:     5 Max: 22041 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =     22 in 00:23:48 =    0.0/s Avg: 64886 Min:     5 Max: 448851 Err:     0 (0.00%)
+Tidying up ...    @ 2023 Aug 16 17:17:25 UTC (1692206245912)
+... end of run

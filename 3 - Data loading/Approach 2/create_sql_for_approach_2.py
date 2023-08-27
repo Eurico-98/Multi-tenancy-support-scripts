@@ -10,21 +10,47 @@ tenants = [f'tenant_{i}' for i in range(1, 26)]
 ################################### GET TOTAL LINES IN EACH ONE OF THE LINEITEM TABLES ###################################
 
 # Dictionary to hold the total number of lines for each tenant's table
-line_counts = {tenant: 0 for tenant in tenants}
-
+line_counts_lineitem = {tenant: 0 for tenant in tenants}
 
 # Traverse each tenant's table folder
 for tenant in tenants:
     
-    print(f'{tenant}')
     with open(f'./{tenant}/lineitem.tbl', 'r') as file:
         lines = file.readlines()
         line_count = len(lines)
 
     # Update the total line count for the current tenant
-    line_counts[tenant] = line_count
-    print(f' - Lineitem Row Count: {line_count}') 
+    line_counts_lineitem[tenant] = line_count
+    print(f'{tenant} - Lineitem Row Count: {line_count}')
 
+"""line_counts_lineitem = {
+        'tenant_1': 6001215,
+        'tenant_2': 6001215,
+        'tenant_3': 6001215,
+        'tenant_4': 6001215,
+        'tenant_5': 3137473,
+        'tenant_6': 6001215,
+        'tenant_7': 4074440,
+        'tenant_8': 3702988,
+        'tenant_9': 3924614,
+        'tenant_10': 3420176,
+        'tenant_11': 3197835,
+        'tenant_12': 3089740,
+        'tenant_13': 3047615,
+        'tenant_14': 3047615,
+        'tenant_15': 2999671,
+        'tenant_16': 6001215,
+        'tenant_17': 6001215,
+        'tenant_18': 6001215,
+        'tenant_19': 6001215,
+        'tenant_20': 6001215,
+        'tenant_21': 6001215,
+        'tenant_22': 6001215,
+        'tenant_23': 6001215,
+        'tenant_24': 6001215,
+        'tenant_25': 6001215
+}
+"""
 #####################################################################################################
 
 
@@ -46,7 +72,7 @@ primary_keys = {'region': 'r_regionkey',
 # General increment variable - initialize it with biggest total line count from the tenant with the most data
 # the 100000 value added is to account for the jumps in key value ganaration that dbgen does - it is not a linear generatio
 # of values therefore it is required to increment the increment_ver in some extra amount to avoid equal keys
-increment_var = line_counts['tenant_1'] + 100000
+increment_var = line_counts_lineitem['tenant_1'] + 100000
 
 print(f'increment_var starts at: {increment_var}')
 
@@ -91,7 +117,7 @@ ALTER TABLE tenant_1.lineitem DROP CONSTRAINT lineitem_pkey;
     output_file.write(sql_add_tenant_col)
 
 
-    for tenant in islice(line_counts.keys(), 1, None):
+    for tenant in islice(line_counts_lineitem.keys(), 1, None):
         
         disable_constrains = """
         
@@ -169,7 +195,7 @@ UPDATE {0}.lineitem SET tenant_id = {1};
         
         # the 100000 value added is to account for the jumps in key value ganaration that dbgen does - it is not a linear generatio
         # of values therefore it is required to increment the increment_ver in some extra amount to avoid equal keys
-        increment_var += line_counts[tenant] + 100000 
+        increment_var += line_counts_lineitem[tenant] + 100000
     
     # add commands to create the tables in the public schema
     sql_public_schema_commands = """
@@ -282,6 +308,9 @@ ALTER TABLE PARTSUPP ADD FOREIGN KEY (PS_PARTKEY) REFERENCES PART(P_PARTKEY);
 ALTER TABLE ORDERS ADD FOREIGN KEY (O_CUSTKEY) REFERENCES CUSTOMER(C_CUSTKEY);
 ALTER TABLE LINEITEM ADD FOREIGN KEY (L_ORDERKEY) REFERENCES ORDERS(O_ORDERKEY);
 ALTER TABLE LINEITEM ADD FOREIGN KEY (L_PARTKEY,L_SUPPKEY) REFERENCES PARTSUPP(PS_PARTKEY,PS_SUPPKEY);
+
+
+
 """
     output_file.write(sql_public_schema_commands)
     
@@ -296,58 +325,201 @@ ALTER TABLE LINEITEM ADD FOREIGN KEY (L_PARTKEY,L_SUPPKEY) REFERENCES PARTSUPP(P
     line_counts_customer = {tenant: 0 for tenant in tenants}
     line_counts_partsupp = {tenant: 0 for tenant in tenants}
     line_counts_orders = {tenant: 0 for tenant in tenants}
-    
+ 
 
     # Traverse each tenant's table folder to get line count of each table of each tenant
     print(f'------------ Starting other tables row count')
     for tenant in tenants:
             
-        print(f'Counting {tenant}')
-        print(f'Table customer') 
+         
         with open(f'./{tenant}/customer.tbl', 'r') as file:
             lines = file.readlines()
             line_counts_customer[tenant] = len(lines)
+            print(f'{tenant} - customer Row Count: {len(lines)}')
         
-        print(f'Table part') 
+        
         with open(f'./{tenant}/part.tbl', 'r') as file:
             lines = file.readlines()
             line_counts_part[tenant] = len(lines)
+            print(f'{tenant} - part Row Count: {len(lines)}')
+            
         
-        print(f'Table partsupp') 
         with open(f'./{tenant}/partsupp.tbl', 'r') as file:
             lines = file.readlines()
             line_counts_partsupp[tenant] = len(lines)
+            print(f'{tenant} - partsupp Row Count: {len(lines)}')
             
-        print(f'Table supplier') 
+
         with open(f'./{tenant}/supplier.tbl', 'r') as file:
             lines = file.readlines()
             line_counts_supplier[tenant] = len(lines)
+            print(f'{tenant} - supplier Row Count: {len(lines)}')
+            
         
-        print(f'Table orders') 
         with open(f'./{tenant}/orders.tbl', 'r') as file:
             lines = file.readlines()
             line_counts_orders[tenant] = len(lines)
-    
-    
+            print(f'{tenant} - orders Row Count: {len(lines)}')
+            
+    """line_counts_part = {
+        'tenant_1': 200000,
+        'tenant_2': 200000,
+        'tenant_3': 200000,
+        'tenant_4': 200000,
+        'tenant_5': 104600,
+        'tenant_6': 200000,
+        'tenant_7': 135800,
+        'tenant_8': 123400,
+        'tenant_9': 130800,
+        'tenant_10': 114000,
+        'tenant_11': 106600,
+        'tenant_12': 103000,
+        'tenant_13': 101600,
+        'tenant_14': 101600,
+        'tenant_15': 100000,
+        'tenant_16': 200000,
+        'tenant_17': 200000,
+        'tenant_18': 200000,
+        'tenant_19': 200000,
+        'tenant_20': 200000,
+        'tenant_21': 200000,
+        'tenant_22': 200000,
+        'tenant_23': 200000,
+        'tenant_24': 200000,
+        'tenant_25': 200000
+    }
+
+
+    line_counts_customer = {
+        'tenant_1': 150000,
+        'tenant_2': 150000,
+        'tenant_3': 150000,
+        'tenant_4': 150000,
+        'tenant_5': 78450,
+        'tenant_6': 150000,
+        'tenant_7': 101850,
+        'tenant_8': 92550,
+        'tenant_9': 98100,
+        'tenant_10': 85500,
+        'tenant_11': 79950,
+        'tenant_12': 77250,
+        'tenant_13': 76200,
+        'tenant_14': 76200,
+        'tenant_15': 75000,
+        'tenant_16': 150000,
+        'tenant_17': 150000,
+        'tenant_18': 150000,
+        'tenant_19': 150000,
+        'tenant_20': 150000,
+        'tenant_21': 150000,
+        'tenant_22': 150000,
+        'tenant_23': 150000,
+        'tenant_24': 150000,
+        'tenant_25': 150000
+    }
+
+
+    line_counts_partsupp = {
+        'tenant_1': 800000,
+        'tenant_2': 800000,
+        'tenant_3': 800000,
+        'tenant_4': 800000,
+        'tenant_5': 418400,
+        'tenant_6': 800000,
+        'tenant_7': 543200,
+        'tenant_8': 493600,
+        'tenant_9': 523200,
+        'tenant_10': 456000,
+        'tenant_11': 426400,
+        'tenant_12': 412000,
+        'tenant_13': 406400,
+        'tenant_14': 406400,
+        'tenant_15': 400000,
+        'tenant_16': 800000,
+        'tenant_17': 800000,
+        'tenant_18': 800000,
+        'tenant_19': 800000,
+        'tenant_20': 800000,
+        'tenant_21': 800000,
+        'tenant_22': 800000,
+        'tenant_23': 800000,
+        'tenant_24': 800000,
+        'tenant_25': 800000
+    }
+
+
+    line_counts_supplier = {
+        'tenant_1': 10000,
+        'tenant_2': 10000,
+        'tenant_3': 10000,
+        'tenant_4': 10000,
+        'tenant_5': 5230,
+        'tenant_6': 10000,
+        'tenant_7': 6790,
+        'tenant_8': 6170,
+        'tenant_9': 6540,
+        'tenant_10': 5700,
+        'tenant_11': 5330,
+        'tenant_12': 5150,
+        'tenant_13': 5080,
+        'tenant_14': 5080,
+        'tenant_15': 5000,
+        'tenant_16': 10000,
+        'tenant_17': 10000,
+        'tenant_18': 10000,
+        'tenant_19': 10000,
+        'tenant_20': 10000,
+        'tenant_21': 10000,
+        'tenant_22': 10000,
+        'tenant_23': 10000,
+        'tenant_24': 10000,
+        'tenant_25': 10000
+    }
+
+
+    line_counts_orders = {
+        'tenant_1': 1500000,
+        'tenant_2': 1500000,
+        'tenant_3': 1500000,
+        'tenant_4': 1500000,
+        'tenant_5': 784500,
+        'tenant_6': 1500000,
+        'tenant_7': 1018500,
+        'tenant_8': 925500,
+        'tenant_9': 981000,
+        'tenant_10': 855000,
+        'tenant_11': 799500,
+        'tenant_12': 772500,
+        'tenant_13': 762000,
+        'tenant_14': 762000,
+        'tenant_15': 750000,
+        'tenant_16': 1500000,
+        'tenant_17': 1500000,
+        'tenant_18': 1500000,
+        'tenant_19': 1500000,
+        'tenant_20': 1500000,
+        'tenant_21': 1500000,
+        'tenant_22': 1500000,
+        'tenant_23': 1500000,
+        'tenant_24': 1500000,
+        'tenant_25': 1500000
+    }
+    """    
 
     # Copy and Delete Rows from Tables
     def copy_and_delete_rows(tenant, table, num_rows):
         
-        sql_copy_and_delete = """
-INSERT INTO {1} SELECT * FROM {0}.{1} LIMIT {2};
-DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
-        sql_copy_and_delete = sql_copy_and_delete.format(tenant, table, num_rows)  # Extract the tenant number
-        output_file.write(sql_copy_and_delete)
+        sql_commands = """INSERT INTO {1} SELECT * FROM {0}.{1} LIMIT {2};
+"""
+        #DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});
+        sql_commands = sql_commands.format(tenant, table, num_rows)
+        output_file.write(sql_commands)
 
 
-    # Create Copy and Delete commands for table Region
-    ten_counter = 1
-    table_region_ten = [f'tenant_{i}' for i in range(1, 26)]
-    while ten_counter < 26:
-        tenant = random.choice(table_region_ten)
+    # Create commands for table Region
+    tables_region_and_nation_ten = [f'tenant_{i}' for i in range(1, 26)]
+    for tenant in tables_region_and_nation_ten:
         copy_and_delete_rows(tenant, 'region', 6)
-        ten_counter += 1
-        table_region_ten.remove(tenant)
     output_file.write("""                
 -- ---------------------------------------------------------------- finnished copying table region to public schema                      
 
@@ -356,13 +528,9 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
 """)
 
-    # Create Copy and Delete commands for table part
-    while any(line_counts_part.values()):
-        tenant = random.choice(tenants)
-        if line_counts_part[tenant] > 0:
-            num_rows = random.randint(1, min(1000000, line_counts_part[tenant]))
-            copy_and_delete_rows(tenant, 'part', num_rows)
-            line_counts_part[tenant] -= num_rows
+    # Create commands for table part
+    for tenant in line_counts_part.keys():
+        copy_and_delete_rows(tenant, 'part', line_counts_part[tenant]) 
     output_file.write("""           
 -- ---------------------------------------------------------------- finnished copying table part to public schema                      
 
@@ -371,14 +539,9 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
 """)
 
-    # Create Copy and Delete commands for table nation
-    ten_counter = 1
-    table_region_ten = [f'tenant_{i}' for i in range(1, 26)]
-    while ten_counter < 26:
-        tenant = random.choice(table_region_ten)
+    # Create commands for table nation
+    for tenant in tables_region_and_nation_ten:
         copy_and_delete_rows(tenant, 'nation', 25)
-        ten_counter += 1
-        table_region_ten.remove(tenant)
     output_file.write("""              
 -- ---------------------------------------------------------------- finnished copying table nation to public schema                      
 
@@ -387,13 +550,9 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
 """)
 
-    # Create Copy and Delete commands for table supplier
-    while any(line_counts_supplier.values()):
-        tenant = random.choice(tenants)
-        if line_counts_supplier[tenant] > 0:
-            num_rows = random.randint(1, min(1000000, line_counts_supplier[tenant]))
-            copy_and_delete_rows(tenant, 'supplier', num_rows)
-            line_counts_supplier[tenant] -= num_rows
+    # Create commands for table supplier
+    for tenant in line_counts_supplier.keys():
+        copy_and_delete_rows(tenant, 'supplier', line_counts_supplier[tenant])
     output_file.write("""   
 -- ---------------------------------------------------------------- finnished copying table supplier to public schema                      
 
@@ -402,13 +561,9 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
 """)
 
-    # Create Copy and Delete commands for table customer
-    while any(line_counts_customer.values()):
-        tenant = random.choice(tenants)
-        if line_counts_customer[tenant] > 0:
-            num_rows = random.randint(1, min(1000000, line_counts_customer[tenant]))
-            copy_and_delete_rows(tenant, 'customer', num_rows)
-            line_counts_customer[tenant] -= num_rows
+    # Create commands for table customer
+    for tenant in line_counts_customer.keys():
+        copy_and_delete_rows(tenant, 'customer', line_counts_customer[tenant])
     output_file.write("""                    
 -- ---------------------------------------------------------------- finnished copying table customer to public schema                      
 
@@ -417,13 +572,9 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
 """)
 
-    # Create Copy and Delete commands for table partsupp
-    while any(line_counts_partsupp.values()):
-        tenant = random.choice(tenants)
-        if line_counts_partsupp[tenant] > 0:
-            num_rows = random.randint(1, min(1000000, line_counts_partsupp[tenant]))
-            copy_and_delete_rows(tenant, 'partsupp', num_rows)
-            line_counts_partsupp[tenant] -= num_rows
+    # Create commands for table partsupp
+    for tenant in line_counts_partsupp.keys():
+        copy_and_delete_rows(tenant, 'partsupp', line_counts_partsupp[tenant])
     output_file.write("""                     
 -- ---------------------------------------------------------------- finnished copying table partsupp to public schema                      
 
@@ -432,13 +583,9 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
 """)
 
-    # Create Copy and Delete commands for table orders
-    while any(line_counts_orders.values()):
-        tenant = random.choice(tenants)
-        if line_counts_orders[tenant] > 0:
-            num_rows = random.randint(1, min(1000000, line_counts_orders[tenant]))
-            copy_and_delete_rows(tenant, 'orders', num_rows)
-            line_counts_orders[tenant] -= num_rows
+    # Create commands for table orders
+    for tenant in line_counts_orders.keys():
+        copy_and_delete_rows(tenant, 'orders', line_counts_orders[tenant])
     output_file.write("""                   
 -- ---------------------------------------------------------------- finnished copying table orders to public schema                      
 
@@ -447,13 +594,9 @@ DELETE FROM {0}.{1} WHERE ctid IN (SELECT ctid FROM {0}.{1} LIMIT {2});"""
 
 """)
 
-    # Create Copy and Delete commands for table lineitem
-    while any(line_counts.values()):
-        tenant = random.choice(tenants)
-        if line_counts[tenant] > 0:
-            num_rows = random.randint(1, min(1000000, line_counts[tenant]))
-            copy_and_delete_rows(tenant, 'lineitem', num_rows)
-            line_counts[tenant] -= num_rows
+    # Create commands for table lineitem
+    for tenant in line_counts_lineitem.keys():
+        copy_and_delete_rows(tenant, 'lineitem', line_counts_lineitem[tenant])
     output_file.write("""                   
 -- ---------------------------------------------------------------- finnished copying table lineitem to public schema                      
 

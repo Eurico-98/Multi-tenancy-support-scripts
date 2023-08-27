@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="A1-Throughput-Test-2" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A1 - Throughput Test - scenario 2 - Gradual Increase" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">25</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">300</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
+          <boolProp name="autocommit">true</boolProp>
+          <stringProp name="checkQuery"></stringProp>
+          <stringProp name="connectionAge">5000</stringProp>
+          <stringProp name="connectionProperties"></stringProp>
+          <stringProp name="dataSource">Throughput-test-1</stringProp>
+          <stringProp name="dbUrl">jdbc:postgresql://a1-tt-2.cob7aqndu7dk.eu-north-1.rds.amazonaws.com:5432/postgres</stringProp>
+          <stringProp name="driver">org.postgresql.Driver</stringProp>
+          <stringProp name="initQuery"></stringProp>
+          <boolProp name="keepAlive">true</boolProp>
+          <stringProp name="password">BD_RDS_EC2_instances_172635</stringProp>
+          <stringProp name="poolMax">0</stringProp>
+          <boolProp name="preinit">false</boolProp>
+          <stringProp name="timeout">10000</stringProp>
+          <stringProp name="transactionIsolation">DEFAULT</stringProp>
+          <stringProp name="trimInterval">60000</stringProp>
+          <stringProp name="username">postgres</stringProp>
+        </JDBCDataSource>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>false</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>true</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <fileName>true</fileName>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>false</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <RandomOrderController guiclass="RandomOrderControllerGui" testclass="RandomOrderController" testname="Random Order Controller" enabled="true"/>
+        <hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Queries - Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">10</stringProp>
+          </LoopController>
+          <hashTree>
+            <com.di.jmeter.config.ExtendedCsvDataSetConfig guiclass="com.di.jmeter.config.gui.ExtendedCsvDataSetConfigGui" testclass="com.di.jmeter.config.ExtendedCsvDataSetConfig" testname="Queries - Extended CSV Data Set Config" enabled="true">
+              <stringProp name="filename">A1-Throuput-test-query-set.csv</stringProp>
+              <stringProp name="fileEncoding">UTF-8</stringProp>
+              <stringProp name="variableNames">query</stringProp>
+              <boolProp name="ignoreFirstLine">false</boolProp>
+              <stringProp name="delimiter">;</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <stringProp name="selectRow">Random</stringProp>
+              <stringProp name="updateValue">Each Iteration</stringProp>
+              <stringProp name="ooValue">Continue Cyclic</stringProp>
+              <stringProp name="shareMode">All threads</stringProp>
+              <boolProp name="autoAllocate">true</boolProp>
+              <boolProp name="allocate">false</boolProp>
+              <stringProp name="blockSize"></stringProp>
+            </com.di.jmeter.config.ExtendedCsvDataSetConfig>
+            <hashTree/>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Queries" enabled="true">
+              <stringProp name="dataSource">Throughput-test-1</stringProp>
+              <stringProp name="query">${query}</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+              <stringProp name="queryType">Callable Statement</stringProp>
+              <stringProp name="resultSetHandler">Store as String</stringProp>
+              <stringProp name="resultSetMaxRows"></stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+            </JDBCSampler>
+            <hashTree/>
+          </hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Q15 - Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">1</stringProp>
+          </LoopController>
+          <hashTree>
+            <com.di.jmeter.config.ExtendedCsvDataSetConfig guiclass="com.di.jmeter.config.gui.ExtendedCsvDataSetConfigGui" testclass="com.di.jmeter.config.ExtendedCsvDataSetConfig" testname="Q15 - Extended CSV Data Set Config" enabled="true">
+              <stringProp name="filename">A1-Throuput-test-Q15.csv</stringProp>
+              <stringProp name="fileEncoding">UTF-8</stringProp>
+              <stringProp name="variableNames">QUERY_PART1,QUERY_PART2,QUERY_PART3</stringProp>
+              <boolProp name="ignoreFirstLine">false</boolProp>
+              <stringProp name="delimiter">;</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <stringProp name="selectRow">Random</stringProp>
+              <stringProp name="updateValue">Each Iteration</stringProp>
+              <stringProp name="ooValue">Continue Cyclic</stringProp>
+              <stringProp name="shareMode">All threads</stringProp>
+              <boolProp name="autoAllocate">true</boolProp>
+              <boolProp name="allocate">false</boolProp>
+              <stringProp name="blockSize"></stringProp>
+            </com.di.jmeter.config.ExtendedCsvDataSetConfig>
+            <hashTree/>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Q15" enabled="true">
+              <stringProp name="dataSource">Throughput-test-1</stringProp>
+              <stringProp name="queryType">Callable Statement</stringProp>
+              <stringProp name="query">${FULL_QUERY_15}</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+              <stringProp name="resultSetMaxRows"></stringProp>
+              <stringProp name="resultSetHandler">Store as String</stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="script">// Read the three lines from the CSV file
+String queryPart1 = vars.get(&quot;QUERY_PART1&quot;);
+String queryPart2 = vars.get(&quot;QUERY_PART2&quot;);
+String queryPart3 = vars.get(&quot;QUERY_PART3&quot;);
+
+// Combine the three lines to form the complete Query 15 variant
+String fullQuery15 = queryPart1 + &quot;;\n&quot; + queryPart2 + &quot;;\n&quot; + queryPart3 + &quot;;&quot;;
+
+// Store the complete query in a JMeter variable
+vars.put(&quot;FULL_QUERY_15&quot;, fullQuery15);
+</stringProp>
+                <stringProp name="scriptLanguage">groovy</stringProp>
+              </JSR223PreProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

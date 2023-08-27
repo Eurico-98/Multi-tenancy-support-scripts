@@ -1,0 +1,34 @@
+{
+  "T1 - RF2" : {
+    "transaction" : "T1 - RF2",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 31.0,
+    "medianResTime" : 31.0,
+    "minResTime" : 31.0,
+    "maxResTime" : 31.0,
+    "pct1ResTime" : 31.0,
+    "pct2ResTime" : 31.0,
+    "pct3ResTime" : 31.0,
+    "throughput" : 32.25806451612903,
+    "receivedKBytesPerSec" : 0.2835181451612903,
+    "sentKBytesPerSec" : 0.0
+  },
+  "T1 - RF1" : {
+    "transaction" : "T1 - RF1",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 1326.0,
+    "medianResTime" : 1326.0,
+    "minResTime" : 1326.0,
+    "maxResTime" : 1326.0,
+    "pct1ResTime" : 1326.0,
+    "pct2ResTime" : 1326.0,
+    "pct3ResTime" : 1326.0,
+    "throughput" : 0.7541478129713424,
+    "receivedKBytesPerSec" : 0.006628252262443439,
+    "sentKBytesPerSec" : 0.0
+  }
+}

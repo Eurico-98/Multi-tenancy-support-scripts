@@ -1,0 +1,23 @@
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using A2-Power-Test.jmx
+Starting standalone test @ 2023 Aug 13 17:26:05 UTC (1691947565711)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:02:26 =    0.0/s Avg: 145475 Min: 145475 Max: 145475 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      1 in 00:00:28 =    0.0/s Avg: 28049 Min: 28049 Max: 28049 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =      2 in 00:02:54 =    0.0/s Avg: 86762 Min: 28049 Max: 145475 Err:     0 (0.00%)
+summary +      4 in 00:03:03 =    0.0/s Avg: 45714 Min:  2051 Max: 138980 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =      6 in 00:05:56 =    0.0/s Avg: 59396 Min:  2051 Max: 145475 Err:     0 (0.00%)
+summary +      5 in 00:03:27 =    0.0/s Avg: 41487 Min:  2940 Max: 142368 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =     11 in 00:09:24 =    0.0/s Avg: 51255 Min:  2051 Max: 145475 Err:     0 (0.00%)
+summary +      4 in 00:05:32 =    0.0/s Avg: 83110 Min: 17444 Max: 137681 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =     15 in 00:14:56 =    0.0/s Avg: 59750 Min:  2051 Max: 145475 Err:     0 (0.00%)
+summary +      3 in 00:03:31 =    0.0/s Avg: 70369 Min: 11662 Max: 177288 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary =     18 in 00:18:27 =    0.0/s Avg: 61520 Min:  2051 Max: 177288 Err:     0 (0.00%)
+summary +      4 in 00:00:42 =    0.1/s Avg: 10529 Min:     6 Max: 31964 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =     22 in 00:19:10 =    0.0/s Avg: 52249 Min:     6 Max: 177288 Err:     0 (0.00%)
+Tidying up ...    @ 2023 Aug 13 17:45:16 UTC (1691948716077)
+... end of run
