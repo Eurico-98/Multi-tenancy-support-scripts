@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # total data size in MB
-total_data_size=30000
-min_size=500
-max_size=2000
+total_data_size=30720
+min_size=512
+max_size=2048
 num_tenants=25
 remaining_size=$total_data_size
 
